@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="mapperFilesFolder" value="C:\Users\CKXG\Documents\CODE\Homework\SoftwareProjectTraining\code\campus-emergency-command-system-server\auth-service\src\main\resources\mapper" />
+        <option name="mapperFilesFolderList">
+          <list>
+            <option value="C:\Users\CKXG\Documents\CODE\Homework\SoftwareProjectTraining\code\campus-emergency-command-system-server\auth-service\src\main\resources\mapper" />
+          </list>
+        </option>
+      </ProjectProfile>
+    </option>
+  </component>
+</project>

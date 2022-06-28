@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="fastRequestCurrentProjectConfig">
+    <option name="domain" value="http://localhost:8989" />
+    <option name="enableEnv" value="local" />
+    <option name="enableProject" value="newsCMS" />
+    <option name="urlParamsKeyValueList">
+      <list>
+        <ParamKeyValueString>
+          <option name="customFlag" value="2" />
+          <option name="key" value="" />
+          <option name="type" value="String" />
+          <option name="value" value="" />
+        </ParamKeyValueString>
+      </list>
+    </option>
+  </component>
+</project>

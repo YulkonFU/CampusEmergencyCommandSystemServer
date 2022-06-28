@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>cecs</artifactId>
+        <groupId>cn.edu.cupk</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.edu.cupk.cecs</groupId>
+    <artifactId>cecs-auth</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-web</artifactId>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-jdbc</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <version>8.0.29</version>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-security</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.security</groupId>-->
+<!--            <artifactId>spring-security-core</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.baomidou</groupId>-->
+<!--            <artifactId>mybatis-plus-boot-starter</artifactId>-->
+<!--            <version>3.5.2</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba</groupId>-->
+<!--            <artifactId>fastjson</artifactId>-->
+<!--            <version>2.0.7</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; Redis 依赖&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.data</groupId>-->
+<!--            <artifactId>spring-data-redis</artifactId>-->
+<!--            <version>2.6.4</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-data-redis</artifactId>-->
+<!--            <version>2.6.7</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; fastjson 依赖&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba</groupId>-->
+<!--            <artifactId>fastjson</artifactId>-->
+<!--            <version>2.0.7</version>-->
+<!--        </dependency>-->
+
+<!--        &lt;!&ndash; jwt &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.jsonwebtoken</groupId>-->
+<!--            <artifactId>jjwt</artifactId>-->
+<!--            <version>0.9.1</version>-->
+<!--        </dependency>-->
+
+        <!--Spring Cloud & Alibaba -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+
+        <!-- 注册中心 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+        </dependency>
+
+        <!-- 配置中心 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <!-- OAuth2 认证服务器-->
+        <dependency>
+            <groupId>org.springframework.security.oauth.boot</groupId>
+            <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-oauth2-jose</artifactId>
+        </dependency>
+
+        <!-- Sentinel流量控制、熔断降级 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+        <!-- Sentinel规则持久化至Nacos配置 -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.edu.cupk</groupId>
+            <artifactId>common-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>cn.edu.cupk</groupId>
+            <artifactId>common-web</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
