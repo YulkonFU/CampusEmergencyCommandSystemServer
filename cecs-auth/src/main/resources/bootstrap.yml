@@ -1,0 +1,14 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: cecs-auth
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://nat.ckxgzxa.top:33300
+      config:
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        prefix: ${spring.application.name}

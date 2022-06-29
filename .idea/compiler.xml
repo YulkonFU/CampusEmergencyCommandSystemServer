@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cecs-gateway" />
       </profile>
       <profile name="Annotation profile for cecs" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -18,19 +17,24 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.0.RC1/mapstruct-processor-1.5.0.RC1.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.0.RC1/mapstruct-1.5.0.RC1.jar" />
         </processorPath>
+        <module name="common-mybatis" />
         <module name="config-server" />
         <module name="warehouse-service" />
         <module name="admin-api" />
+        <module name="cecs-gateway" />
         <module name="cecs-auth" />
         <module name="common-web" />
         <module name="order-service" />
-        <module name="gateway" />
+        <module name="admin-boot" />
+        <module name="common-redis" />
         <module name="common-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="campus-emergency-command-system-server" target="1.8" />
-      <module name="cecs-gateway" target="1.8" />
+      <module name="gateway" target="1.8" />
+      <module name="gateway (1)" target="1.8" />
+      <module name="gateway (2)" target="1.8" />
       <module name="nacos-consumer" target="1.8" />
       <module name="nacos-provider" target="1.8" />
       <module name="nacos-provider1" target="1.8" />
@@ -40,15 +44,19 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="admin-api" options="-parameters" />
+      <module name="admin-boot" options="-parameters" />
       <module name="campus-emergency-command-system-server" options="-parameters" />
       <module name="cecs-admin" options="-parameters" />
       <module name="cecs-auth" options="-parameters" />
       <module name="cecs-common" options="-parameters" />
       <module name="cecs-gateway" options="-parameters" />
       <module name="common-core" options="-parameters" />
+      <module name="common-mybatis" options="-parameters" />
+      <module name="common-redis" options="-parameters" />
       <module name="common-web" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="gateway (1)" options="-parameters" />
       <module name="nacos-consumer" options="-parameters" />
       <module name="nacos-provider" options="-parameters" />
       <module name="nacos-provider2" options="-parameters" />

@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>admin-api</module>
+        <module>admin-boot</module>
     </modules>
 
     <properties>
