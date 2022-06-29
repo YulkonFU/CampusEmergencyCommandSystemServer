@@ -1,6 +1,5 @@
-package cn.edu.cupk.cecs.admin.entity;
+package cn.edu.cupk.cecs.admin.pojo.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -12,21 +11,22 @@ import lombok.NoArgsConstructor;
  * Created with Intellij IDEA
  *
  * @Author:rst
- * @Date：2022/06/28/16:47
- * @Description:权限表
+ * @Date：2022/06/28/16:48
+ * @Description:角色-权限
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName("permission")
-public class Permission {
-    @TableId(value = "id",type = IdType.AUTO)
+@TableName("role_permission")
+public class RolePermission {
+//    @TableId(value = "role_id")
+    private long roleId;
+
+//    @TableId(value = "permission_id")
     private long permissionId;
-
-    private String name;
-
-    private String authority;
 
     @TableLogic(value = "0",delval = "1")
     private Integer deleted;
+
+
 }

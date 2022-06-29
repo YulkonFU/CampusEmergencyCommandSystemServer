@@ -1,6 +1,6 @@
 package cn.edu.cupk.cecs.admin.mapper;
 
-import cn.edu.cupk.cecs.admin.entity.UserRole;
+import cn.edu.cupk.cecs.admin.pojo.entity.UserRole;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;

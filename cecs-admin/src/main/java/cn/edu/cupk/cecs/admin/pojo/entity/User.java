@@ -1,4 +1,4 @@
-package cn.edu.cupk.cecs.admin.entity;
+package cn.edu.cupk.cecs.admin.pojo.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.AllArgsConstructor;

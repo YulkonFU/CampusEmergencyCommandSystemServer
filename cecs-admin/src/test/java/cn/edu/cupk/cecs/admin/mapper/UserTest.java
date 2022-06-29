@@ -1,7 +1,6 @@
 package cn.edu.cupk.cecs.admin.mapper;
 
-import cn.edu.cupk.cecs.admin.entity.User;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import cn.edu.cupk.cecs.admin.pojo.entity.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -102,17 +101,18 @@ public class UserTest {
     void selectPage(){
 
         //创建page对象（1：当前页；3：每页显示记录数）
-        Page<User> page = new Page<>(1,3);
-        //调用分页查询方法，将分页所有数据封装到page对象里面
-        userMapper.selectPage(page,null);
-        //通过page对象获取分页数据
-        System.out.println(page.getCurrent());  //当前页
-        System.out.println(page.getRecords());  //每页数据list集合
-        System.out.println(page.getPages());    //总页数
-        System.out.println(page.getSize());     //每页显示记录数
-        System.out.println(page.getTotal());    //总记录数
-        System.out.println(page.hasNext());     //是否有下一页
-        System.out.println(page.hasPrevious()); //是否有上一页
+//        IPage<User> page = new Page<>(1,3);
+//        IPage<User> page = new IPage
+//        //调用分页查询方法，将分页所有数据封装到page对象里面
+//        userMapper.selectPage(page,null);
+//        //通过page对象获取分页数据
+//        System.out.println(page.getCurrent());  //当前页
+//        System.out.println(page.getRecords());  //每页数据list集合
+//        System.out.println(page.getPages());    //总页数
+//        System.out.println(page.getSize());     //每页显示记录数
+//        System.out.println(page.getTotal());    //总记录数
+//        System.out.println(page.hasNext());     //是否有下一页
+//        System.out.println(page.hasPrevious()); //是否有上一页
 
     }
 }

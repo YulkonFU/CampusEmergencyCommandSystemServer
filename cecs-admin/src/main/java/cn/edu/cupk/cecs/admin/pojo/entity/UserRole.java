@@ -1,6 +1,5 @@
-package cn.edu.cupk.cecs.admin.entity;
+package cn.edu.cupk.cecs.admin.pojo.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -13,17 +12,19 @@ import lombok.NoArgsConstructor;
  *
  * @Author:rst
  * @Date：2022/06/28/16:47
- * @Description:职能表
+ * @Description:用户-角色
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName("role")
-public class Role {
-    @TableId(value = "id",type = IdType.AUTO)
+@TableName("user_role")
+public class UserRole {
+//    @TableId(value = "user_id")
+    private long userId;
+
+//    @TableId(value = "role_id")
     private long roleId;
 
-    private String roleName;
     @TableLogic(value = "0",delval = "1")
     private Integer deleted;
 }
