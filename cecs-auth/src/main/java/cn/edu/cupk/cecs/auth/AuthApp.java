@@ -1,6 +1,6 @@
 package cn.edu.cupk.cecs.auth;
 
-import org.mybatis.spring.annotation.MapperScan;
+// import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
@@ -16,7 +16,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
 @EnableDiscoveryClient
-@MapperScan("cn.edu.cupk.cecs.auth.mapper")
+// @MapperScan("cn.edu.cupk.cecs.auth.mapper")
 public class AuthApp {
 
     public static void main(String[] args) {

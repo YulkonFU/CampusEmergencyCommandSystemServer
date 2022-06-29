@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+
+<mapper namespace="cn.edu.cupk.admin.mapper.UserMapper">
+
+    <!-- 用户认证信息映射 -->
+    <resultMap id="AuthUserMap" type="cn.edu.cupk.admin.dto.UserAuthDTO">
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="username" column="username" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <collection property="roles" ofType="string" javaType="list">
+            <result column="code"></result>
+        </collection>
+        <collection property="authorities" ofType="string" javaType="list">
+            <result column="authority"></result>
+        </collection>
+    </resultMap>
+
+    <select id="getAuthInfoByUsername" resultMap="AuthUserMap">
+        SELECT DISTINCT
+            `user`.id,
+            `user`.username,
+            `user`.`password`,
+            role.`code`,
+            permission.authority
+        FROM
+            `user`
+                INNER JOIN
+            user_role
+            ON
+                `user`.id = user_role.user_id
+                INNER JOIN
+            role
+            ON
+                user_role.role_id = role.id
+                INNER JOIN
+            role_permission
+            ON
+                        role.id = role_permission.role_id AND
+                        role.id = role_permission.role_id
+                INNER JOIN
+            permission
+            ON
+                role_permission.permission_id = permission.id
+        WHERE
+            `user`.id = user_role.user_id AND
+            user_role.role_id = role.id AND
+            `user`.deleted = 0 AND
+            user_role.deleted = 0 AND
+            role.deleted = 0 AND
+            `user`.username = #{username};
+    </select>
+</mapper>

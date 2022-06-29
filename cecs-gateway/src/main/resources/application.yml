@@ -1,23 +1,68 @@
 server:
   port: 80  # 服务端口号
-
+#spring:
+#  cloud:
+#    nacos:
+#      # 注册中心
+#      discovery:
+#        server-addr: http://localhost:8848
+#      # 配置中心
+#      config:
+#        server-addr: http://c.youlai.tech:8848
+#        file-extension: yaml
+#        shared-configs[0]:
+#          data-id: youlai-common.yaml
+#          refresh: true
 spring:
   application:
     name: cecs-gateway
   cloud:
     nacos:
       discovery:
-        server-addr: nat.ckxgzxa.top:33300    # nacos通信地址
+        server-addr: http://nat.ckxgzxa.top:33300    # nacos通信地址
         username: rst
         password: rst
+        config:
+          server-addr: http://nat.ckxgzxa.top:33300
+          file-extension: yaml
+          group: DEFAULT_GROUP
+          prefix: ${spring.application.name}
     gateway:    # 让gateway经过nacos实现自动路由转发
       discovery:
         locator:
           enabled: true # 自动根据URL规则实现路由转发
       routes: # 路由规则配置
-        # 第一个路由配置, service-a路由规则
-        - id: route_order_service
+        # 路由配置, 路由规则
+        - id: cecs-auth
           #lb开头代表基于gateway的负载均衡策略选择实例
-          uri: lb://order-service
+          uri: lb://cecs-auth
           #谓词配置
+          predicates:
+          #Path路径谓词，代表用户端URI如果以/a开头便会转发到service-a实例
+          - Path=/auth/**
+          #Header包含指定请求头时生效
+          #- Header=X-Request-Id, \d+
+          #After生效时间谓词，2020年10月15日后该路由才能在网关对外暴露
+          #- After=2020-10-05T00:00:00.000+08:00[Asia/Shanghai]
+          #Method, 请求方法谓词
+          #- Method=GET
+          #谓词配置
+          filters:
+          #忽略掉第一层前缀开始转发
+          #- StripPrefix=1
+          #为响应头增加X-Response=Blue
+          #- AddResponseHeader=X-Response,Blue
+          #对所有匹配的请求添加一个插叙参数
+          #- AddRequestParameter=foo, bar
 
+          #设计过滤器参数时, 采用name-args的完整写法
+          - name: Retry
+            args: #参数部分使用args说明
+              retries: 3
+              status: 503
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

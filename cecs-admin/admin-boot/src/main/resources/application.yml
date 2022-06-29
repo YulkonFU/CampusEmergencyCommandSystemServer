@@ -1,0 +1,19 @@
+server:
+  port: 8002
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:/mapper/**/*.xml
+spring:
+  application:
+    name: cecs-admin
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nat.ckxgzxa.top:33300    # nacos通信地址
+        username: rst
+        password: rst
+  datasource:
+    url: jdbc:mysql://nat.ckxgzxa.top:3306/cecs?useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+    username: cecs
+    password: cupk2022
