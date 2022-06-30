@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @gitee https://gitee.com/ckxgzxa
  * @description:
  */
-@FeignClient(value = "cecs-admin")
+@FeignClient(value = "cecs-admin", fallback = UserFeignFallbackClient.class)
 public interface UserFeignClient {
 
     @GetMapping("/users/loadUserByUsername")
-    UserAuthDTO loadUserDTOByUsername(@PathVariable String username);
+    Result<UserAuthDTO> loadUserDTOByUsername(@PathVariable String username);
 }

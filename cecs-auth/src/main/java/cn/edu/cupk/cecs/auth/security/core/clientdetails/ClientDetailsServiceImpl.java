@@ -13,7 +13,7 @@ import org.springframework.security.oauth2.provider.ClientRegistrationException;
  * @description:
  */
 public class ClientDetailsServiceImpl implements ClientDetailsService {
-    private final OAuthClientFeignClient oAuthClientFeignClient;
+    private final OAuthClientFeignClient clientFeignClient;
 
     @Override
     public ClientDetails loadClientByClientId(String clientId) {
