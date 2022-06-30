@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
 <mapper namespace="cn.edu.cupk.cecs.admin.mapper.UserMapper">
-    <select id="selectPageVo" resultType="cn.edu.cupk.cecs.admin.pojo.entity.User">
-        SELECT * FROM user
+    <select id="findUserDetailed" resultType="cn.edu.cupk.cecs.admin.pojo.form.UserRoleForm">
+        SELECT
+            `user`.id,
+            `user`.username,
+            `user`.`name`,
+            `user`.`password`,
+            `user`.age,
+            `user`.sex,
+            `user`.phone_number,
+            `user`.email,
+            role.role_name
+        FROM
+            user_role
+                INNER JOIN
+            `user`
+            ON
+                user_role.user_id = `user`.id
+                INNER JOIN
+            role
+            ON
+                user_role.role_id = role.id
+        WHERE user.id = #{id};
     </select>
 </mapper>

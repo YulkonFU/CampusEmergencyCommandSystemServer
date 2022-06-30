@@ -1,5 +1,6 @@
 package cn.edu.cupk.cecs.admin.pojo.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -20,9 +21,11 @@ import lombok.NoArgsConstructor;
 @TableName("user_role")
 public class UserRole {
 //    @TableId(value = "user_id")
+    @TableField("user_id")
     private long userId;
 
 //    @TableId(value = "role_id")
+    @TableField("role_id")
     private long roleId;
 
     @TableLogic(value = "0",delval = "1")

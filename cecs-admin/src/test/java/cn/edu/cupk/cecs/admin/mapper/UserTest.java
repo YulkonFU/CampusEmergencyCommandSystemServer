@@ -5,7 +5,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -49,13 +51,16 @@ public class UserTest {
     @Test
     void addUser(){
         User user = new User();
-        user.setUsername("六神");
+        user.setUsername("2019015214");
         user.setSex(0);
-        user.setName("sixstar");
+        user.setName("rst");
         user.setAge(18);
-        user.setEmail("sixstar@136.com");
-        user.setCreateTime("2022-06-02 06:35");
-        user.setPhone("13465894578");
+        user.setEmail("rst@136.com");
+        user.setPhone("154641735");
+        Date date = new Date();
+        SimpleDateFormat ft = new SimpleDateFormat ("yyyy-MM-dd hh:mm:ss");
+        String dateTime = ft.format(date);
+        user.setCreateTime(dateTime);
         int insert = userMapper.insert(user);
         System.out.println(insert);
     }
@@ -82,12 +87,12 @@ public class UserTest {
 //        int result2 = userMapper.deleteBatchIds(Arrays.asList(1,2,3));
 //        System.out.println(result2);
 
-        //简单的条件删除
-        HashMap<String,Object> map = new HashMap<>();
-        map.put("name","fourstar");
-        map.put("age",18);
-        int result3 = userMapper.deleteByMap(map);
-        System.out.println(result3);
+//        //简单的条件删除
+//        HashMap<String,Object> map = new HashMap<>();
+//        map.put("name","fourstar");
+//        map.put("age",18);
+//        int result3 = userMapper.deleteByMap(map);
+//        System.out.println(result3);
     }
 
     /**

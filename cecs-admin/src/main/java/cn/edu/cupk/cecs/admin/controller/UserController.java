@@ -1,13 +1,13 @@
 package cn.edu.cupk.cecs.admin.controller;
 
+import cn.edu.cupk.cecs.admin.pojo.form.UserForm;
+import cn.edu.cupk.cecs.admin.pojo.form.UserRoleForm;
 import cn.edu.cupk.cecs.admin.pojo.utils.PageResult;
+import cn.edu.cupk.cecs.admin.pojo.utils.Result;
 import cn.edu.cupk.cecs.admin.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created with Intellij IDEA
@@ -27,9 +27,32 @@ public class UserController {
     @GetMapping("/users")
     public PageResult selectUsers(@RequestParam(defaultValue = "1",value = "pageNum") Integer currentPage,
                                   @RequestParam(defaultValue = "5",value = "pageSize") Integer pageSize,
-                                  @RequestParam(defaultValue = "",value = "str") String str)
+                                  @RequestParam(defaultValue = "",value = "str") String str,
+                                  @RequestParam(defaultValue = "0",value = "status") Integer status)
     {
-        return userService.selectUserbyName(currentPage,pageSize,str);
+        return userService.findUserList(currentPage, pageSize, str, status);
+    }
+    @ResponseBody
+    @PostMapping("/newUser")
+    public Result<UserRoleForm> addNewUser(UserRoleForm userRoleForm){
+        return userService.addNewUser(userRoleForm);
     }
 
+    @ResponseBody
+    @DeleteMapping("/user")
+    public Result<UserForm> deletedUser(@RequestParam(value = "id") Integer userId){
+        return userService.deleteUserByID(userId);
+    }
+
+    @ResponseBody
+    @PutMapping("/user")
+    public Result<UserRoleForm> updateUser(UserRoleForm userRoleForm){
+        return userService.updateUser(userRoleForm);
+    }
+
+    @ResponseBody
+    @GetMapping("/userDetail")
+    public Result<UserRoleForm> findUserDetail(long id){
+        return userService.findUserDetail(id);
+    }
 }

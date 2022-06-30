@@ -47,4 +47,7 @@ public class User {
 
     @TableLogic(value = "0",delval = "1")
     private Integer deleted;
+
+    public User(String username, String password, String name, Integer sex, Integer age, String email,String phone) {
+    }
 }

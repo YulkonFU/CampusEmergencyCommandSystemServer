@@ -1,10 +1,15 @@
 package cn.edu.cupk.cecs.admin.mapper;
 
 import cn.edu.cupk.cecs.admin.pojo.entity.User;
+import cn.edu.cupk.cecs.admin.pojo.form.UserForm;
+import cn.edu.cupk.cecs.admin.pojo.form.UserRoleForm;
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -26,5 +31,14 @@ public interface UserMapper extends BaseMapper<User> {
     * @Date: 2022/6/29
     */
 
-    IPage<User> selectPageVo(Page<User> page);
+
+    @Select("SELECT * " +
+            " FROM user, user_role, role " +
+            " ${ew.customSqlSegment} ")
+    IPage<UserForm> findUser(IPage<UserForm> page, @Param("ew") Wrapper wrapper);
+
+
+    UserRoleForm findUserDetailed(long id);
+
+
 }
