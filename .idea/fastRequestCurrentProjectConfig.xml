@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentProjectConfig">
-    <option name="domain" value="http://localhost:8989" />
-    <option name="enableEnv" value="local" />
-    <option name="enableProject" value="newsCMS" />
+    <option name="domain" value="http://localhost:8002" />
+    <option name="enableEnv" value="cecs-admin" />
+    <option name="enableProject" value="cecs" />
     <option name="urlParamsKeyValueList">
       <list>
         <ParamKeyValueString>

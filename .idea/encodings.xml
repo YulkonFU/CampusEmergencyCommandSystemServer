@@ -11,6 +11,7 @@
     <file url="file://$PROJECT_DIR$/cecs-common/common-mybatis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cecs-common/common-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cecs-common/common-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cecs-common/common-web/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cecs-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cecs-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cecs-gateway/src/main/java" charset="UTF-8" />

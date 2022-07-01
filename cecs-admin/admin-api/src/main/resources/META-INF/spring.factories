@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.edu.cupk.admin.api.fallback.UserFeignFallbackClient

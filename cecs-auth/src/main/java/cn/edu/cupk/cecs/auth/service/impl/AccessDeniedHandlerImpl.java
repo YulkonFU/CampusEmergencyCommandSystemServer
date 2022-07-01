@@ -1,7 +1,7 @@
 package cn.edu.cupk.cecs.auth.service.impl;
 
-import cn.edu.cupk.cecs.auth.domain.ResponseResult;
-import cn.edu.cupk.cecs.auth.util.WebUtils;
+import cn.edu.cupk.common.result.Result;
+import cn.edu.cupk.common.web.utils.WebUtils;
 import com.alibaba.fastjson.JSON;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.AccessDeniedException;
@@ -24,7 +24,7 @@ import java.io.IOException;
 public class AccessDeniedHandlerImpl implements AccessDeniedHandler {
     @Override
     public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException accessDeniedException) throws IOException, ServletException {
-        ResponseResult result = new ResponseResult(HttpStatus.FORBIDDEN.value(), "该用户无权限");
+        Result result = Result.failed(HttpStatus.FORBIDDEN.value(), "该用户无权限");
         String json = JSON.toJSONString(result);
         WebUtils.renderString(response,json);
     }

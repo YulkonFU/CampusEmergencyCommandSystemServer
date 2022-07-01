@@ -10,6 +10,7 @@
         <id property="id" column="id" jdbcType="BIGINT"/>
         <result property="username" column="username" jdbcType="VARCHAR"/>
         <result property="password" column="password" jdbcType="VARCHAR"/>
+<!--        <result property="status" column="deleted" jdbcType="TINYINT"/>-->
         <collection property="roles" ofType="string" javaType="list">
             <result column="code"></result>
         </collection>

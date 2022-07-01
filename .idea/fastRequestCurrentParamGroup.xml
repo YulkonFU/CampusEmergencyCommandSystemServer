@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
-    <option name="className" value="cn.edu.cupk.admin.api.UserFeignClient" />
-    <option name="method" value="loadUserDTOByUsername" />
-    <option name="module" value="admin-api" />
-    <option name="originUrl" value="/users/loadUserByUsername" />
+    <option name="className" value="cn.edu.cupk.admin.controller.UserController" />
+    <option name="method" value="getAuthInfoByUsername" />
+    <option name="module" value="admin-boot" />
+    <option name="originUrl" value="/users//username/{username}" />
     <option name="pathParamMap">
       <map>
         <entry key="username">
@@ -14,6 +14,6 @@
         </entry>
       </map>
     </option>
-    <option name="url" value="/users/loadUserByUsername" />
+    <option name="url" value="/users//username/username_9fzlt" />
   </component>
 </project>

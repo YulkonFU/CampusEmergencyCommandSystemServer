@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.edu.cupk.common.redis.RedisConfig,\
+  cn.edu.cupk.common.redis.util.RedisCache
+

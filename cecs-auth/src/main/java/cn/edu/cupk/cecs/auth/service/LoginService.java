@@ -1,7 +1,7 @@
 package cn.edu.cupk.cecs.auth.service;
 
-import cn.edu.cupk.cecs.auth.domain.ResponseResult;
-import cn.edu.cupk.cecs.auth.entity.UserInfo;
+import cn.edu.cupk.admin.dto.UserAuthDTO;
+import cn.edu.cupk.common.result.Result;
 
 /**
  * @author 赵希奥
@@ -12,7 +12,7 @@ import cn.edu.cupk.cecs.auth.entity.UserInfo;
  */
 public interface LoginService {
 
-    ResponseResult login(UserInfo userInfo);
+    Result login(UserAuthDTO userInfo);
 
-    ResponseResult logout();
+    Result logout();
 }

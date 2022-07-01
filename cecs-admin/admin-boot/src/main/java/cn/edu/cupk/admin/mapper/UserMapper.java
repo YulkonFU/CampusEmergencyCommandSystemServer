@@ -1,11 +1,9 @@
 package cn.edu.cupk.admin.mapper;
 
-import cn.edu.cupk.admin.entity.User;
+import cn.edu.cupk.admin.pojo.entity.User;
 import cn.edu.cupk.admin.dto.UserAuthDTO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
-
-import javax.annotation.Resource;
 
 /**
  * @author 赵希奥

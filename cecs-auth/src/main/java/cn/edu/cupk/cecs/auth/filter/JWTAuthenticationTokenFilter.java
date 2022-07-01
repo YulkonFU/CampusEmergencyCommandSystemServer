@@ -1,8 +1,8 @@
 package cn.edu.cupk.cecs.auth.filter;
 
-import cn.edu.cupk.cecs.auth.security.core.userdetails.user.SysUserDetails;
-import cn.edu.cupk.cecs.auth.util.JwtUtil;
-import cn.edu.cupk.cecs.auth.util.RedisCache;
+import cn.edu.cupk.cecs.auth.userdetails.LoginUser;
+import cn.edu.cupk.common.web.utils.JwtUtil;
+import cn.edu.cupk.common.redis.util.RedisCache;
 import io.jsonwebtoken.Claims;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -55,13 +55,13 @@ public class JWTAuthenticationTokenFilter extends OncePerRequestFilter {
 
         // 从redis表里获取用户信息
         String redisKey = "login:" + userId;
-        SysUserDetails sysUserDetails = (SysUserDetails) redisCache.getCacheObject(redisKey);
-        if (Objects.isNull(sysUserDetails)) {
+        LoginUser loginUser = (LoginUser) redisCache.getCacheObject(redisKey);
+        if (Objects.isNull(loginUser)) {
             throw new RuntimeException("用户未登录");
         }
         // 存入SecurityContextHolder
         UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
-                sysUserDetails.getUserInfo(), null, sysUserDetails.getAuthorities());
+                loginUser.getUserInfo(), null, loginUser.getAuthorities());
         SecurityContextHolder.getContext().setAuthentication(authenticationToken);
         // 放行
         filterChain.doFilter(request, response);
