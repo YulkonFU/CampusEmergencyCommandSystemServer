@@ -35,7 +35,7 @@ spring:
 
 并更改端口号和应用名即可完成本地配置
 
-3. 进入http://nat.ckxgzxa.top:33300/nacos页面,登录之后点击配置管理
+3. 进入<http://nat.ckxgzxa.top:33300/nacos>页面,登录之后点击配置管理
 
 ![](https://zxastaticpages.oss-cn-beijing.aliyuncs.com/blogpictures/202207020242752.png)
 
