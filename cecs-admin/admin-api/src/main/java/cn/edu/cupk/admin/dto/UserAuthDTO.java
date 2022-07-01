@@ -30,6 +30,11 @@ public class UserAuthDTO {
     private String password;
 
     /**
+     * 用户状态
+     */
+    // private String status;
+
+    /**
      * 用户角色编码集合 ["ROOT","ADMIN"]
      */
     private List<String> roles;

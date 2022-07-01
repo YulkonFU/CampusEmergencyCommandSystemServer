@@ -4,6 +4,7 @@ import cn.edu.cupk.admin.api.fallback.UserFeignFallbackClient;
 import cn.edu.cupk.admin.dto.UserAuthDTO;
 import cn.edu.cupk.common.result.Result;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -14,9 +15,11 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @gitee https://gitee.com/ckxgzxa
  * @description:
  */
+
+@Component
 @FeignClient(value = "cecs-admin", fallback = UserFeignFallbackClient.class)
 public interface UserFeignClient {
 
-    @GetMapping("/users/loadUserByUsername")
+    @GetMapping("/users/username/{username}")
     Result<UserAuthDTO> loadUserDTOByUsername(@PathVariable String username);
 }

@@ -1,7 +1,7 @@
 package cn.edu.cupk.admin.service;
 
 import cn.edu.cupk.admin.dto.UserAuthDTO;
-import cn.edu.cupk.admin.entity.User;
+import cn.edu.cupk.admin.pojo.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

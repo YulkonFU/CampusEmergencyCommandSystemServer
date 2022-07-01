@@ -1,13 +1,11 @@
 package cn.edu.cupk.admin.service.impl;
 
-import cn.edu.cupk.admin.entity.User;
+import cn.edu.cupk.admin.pojo.entity.User;
 import cn.edu.cupk.admin.mapper.UserMapper;
 import cn.edu.cupk.admin.service.UserService;
 import cn.edu.cupk.admin.dto.UserAuthDTO;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
 
 /**
  * @author 赵希奥

@@ -1,5 +1,7 @@
 package cn.edu.cupk.common.base;
 
+import lombok.Data;
+
 /**
  * @author 赵希奥
  * @date 2022/6/29 5:13
@@ -7,6 +9,8 @@ package cn.edu.cupk.common.base;
  * @gitee https://gitee.com/ckxgzxa
  * @description:
  */
+
+@Data
 public class BasePageQuery {
 
     private int pageNum = 1;
