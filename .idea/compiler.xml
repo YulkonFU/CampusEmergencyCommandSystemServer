@@ -32,6 +32,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="campus-emergency-command-system-server" target="1.8" />
+      <module name="config-server" target="1.8" />
       <module name="gateway" target="1.8" />
       <module name="gateway (1)" target="1.8" />
       <module name="gateway (2)" target="1.8" />
@@ -39,6 +40,8 @@
       <module name="nacos-provider" target="1.8" />
       <module name="nacos-provider1" target="1.8" />
       <module name="nacos-provider2" target="1.8" />
+      <module name="order-service" target="1.8" />
+      <module name="warehouse-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
