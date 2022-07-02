@@ -8,9 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="auth-service" />
-        <module name="cecs-admin" />
-        <module name="cecs-watchkeeper" />
         <module name="gateway" />
+        <module name="cecs-event" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +21,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="auth-service" options="-parameters" />
       <module name="cecs-admin" options="-parameters" />
+      <module name="cecs-event" options="-parameters" />
       <module name="cecs-watchkeeper" options="-parameters" />
       <module name="event-service" options="-parameters" />
       <module name="gateway" options="-parameters" />

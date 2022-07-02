@@ -13,6 +13,7 @@
         <module>cecs-gateway</module>
         <module>cecs-admin</module>
         <module>cecs-watchkeeper</module>
+        <module>cecs-event</module>
 
     </modules>
 
