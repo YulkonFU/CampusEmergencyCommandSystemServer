@@ -1,7 +1,8 @@
 package cn.edu.cupk.admin.pojo.entity;
 
+
+import cn.edu.cupk.admin.pojo.enums.RoleEnum;
 import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
@@ -26,8 +27,14 @@ public class UserRole {
 
 //    @TableId(value = "role_id")
     @TableField("role_id")
-    private Long roleId;
+    private RoleEnum roleId;
 
     @TableLogic(value = "0",delval = "1")
     private Integer deleted;
+
+    public UserRole(Long userId, RoleEnum roleId) {
+        this.deleted = 0;
+        this.userId = userId;
+        this.roleId = roleId;
+    }
 }

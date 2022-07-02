@@ -6,6 +6,7 @@ import cn.edu.cupk.admin.pojo.entity.Role;
 import cn.edu.cupk.admin.pojo.entity.User;
 import cn.edu.cupk.admin.mapper.UserMapper;
 import cn.edu.cupk.admin.pojo.entity.UserRole;
+import cn.edu.cupk.admin.pojo.enums.RoleEnum;
 import cn.edu.cupk.admin.pojo.form.UserForm;
 import cn.edu.cupk.admin.pojo.form.UserRoleForm;
 import cn.edu.cupk.admin.service.UserService;
@@ -19,7 +20,6 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
@@ -66,7 +66,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Override
     public Result<UserRoleForm> addNewUser(UserRoleForm user) {
         User newUser = new User();
-
         newUser.setUsername(user.getUsername());
         newUser.setPassword(new BCryptPasswordEncoder().encode(user.getPassword()));
         newUser.setName(user.getName());
@@ -79,25 +78,36 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         String dateTime = ft.format(date);
         newUser.setCreateTime(dateTime);
         int insertResult = userMapper.insert(newUser);
-        if(insertResult == 1){
-            UserRole userRole = new UserRole();
-            LambdaQueryWrapper<User> userLambdaQueryWrapper = new LambdaQueryWrapper<>();
-            userLambdaQueryWrapper.eq(User::getName,newUser.getName()).eq(User::getUsername,newUser.getUsername());
-            User userFound = userMapper.selectOne(userLambdaQueryWrapper);
-            LambdaQueryWrapper<Role> roleLambdaQueryWrapper = new LambdaQueryWrapper<>();
-            roleLambdaQueryWrapper.eq(Role::getRoleName, user.getRoleName());
-            Role role = roleMapper.selectOne(roleLambdaQueryWrapper);
-            userRole.setUserId(userFound.getId());
-            userRole.setRoleId(role.getRoleId());
+        if(insertResult >= 0){
+
+
+
+            Long userId = getIdByUsername(user.getUsername());
+
+            RoleEnum roleId = RoleEnum.getRoleEnumByDesc(user.getRoleName());
+
+            if (roleId == null) {
+                return Result.failed(HttpStatus.BAD_REQUEST.value(), "用户角色有误");
+            }
+
+            UserRole userRole = new UserRole(userId, roleId);
+
+
+
             int result = userRoleMapper.insert(userRole);
-            if(result == 1){
+            if(result >= 0){
                 return Result.success("添加成功", user);
             }
             // else {
             //     return Result.failed(403,"添加失败");
             // }
+
         }
         return Result.failed(403,"添加失败");
+    }
+
+    private Long getIdByUsername(String username) {
+        return userMapper.selectIdByUsername(username);
     }
 
     @Override
@@ -135,7 +145,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 //            userRole.setRoleId(roleID);
             int flagDelete = userRoleMapper.delete(userRoleLambdaQueryWrapper);
             if(flagDelete == 1){
-                userRole.setRoleId(roleID);
+                userRole.setRoleId(RoleEnum.getRoleEnumByValue(userID));
                 int flagInsert = userRoleMapper.insert(userRole);
                 if(flagInsert == 0) return Result.failed(403,"失败");
             }
