@@ -16,7 +16,7 @@ import cn.edu.cupk.cecs.admin.pojo.utils.Result;
  */
 public interface UserService {
 
-    PageResult findUserList(Integer currentPage, Integer pageSize, String str, Integer status);
+    PageResult findUserList(Integer currentPage, Integer pageSize, String name);
 
     Result<UserRoleForm> addNewUser(UserRoleForm user);
 

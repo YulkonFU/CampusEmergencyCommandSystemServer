@@ -40,21 +40,21 @@ public class UserMapperPageTest {
 
 
 
-    @Test
-    public void findUserList(){
-        LambdaQueryWrapper<User> userLambdaQueryWrapper = new LambdaQueryWrapper<>();
-        userLambdaQueryWrapper
-                .eq(User::getStatus,0)
-                .apply("user.id = user_role.user_id")
-                .apply("role.id = user_role.role_id")
-                .like(User::getName , "");
-
-        Page<UserForm> userPage = new Page<>(1 , 5);
-        IPage<UserForm> userIPage = userMapper.findUser(userPage, userLambdaQueryWrapper);
-        System.out.println("总页数： "+userIPage.getPages());
-        System.out.println("总记录数： "+userIPage.getTotal());
-        userIPage.getRecords().forEach(System.out::println);
-    }
+//    @Test
+//    public void findUserList(){
+//        LambdaQueryWrapper<User> userLambdaQueryWrapper = new LambdaQueryWrapper<>();
+//        userLambdaQueryWrapper
+//                .eq(User::getStatus,0)
+//                .apply("user.id = user_role.user_id")
+//                .apply("role.id = user_role.role_id")
+//                .like(User::getName , "");
+//
+//        Page<UserForm> userPage = new Page<>(1 , 5);
+//        IPage<UserForm> userIPage = userMapper.findUser(userPage, userLambdaQueryWrapper);
+//        System.out.println("总页数： "+userIPage.getPages());
+//        System.out.println("总记录数： "+userIPage.getTotal());
+//        userIPage.getRecords().forEach(System.out::println);
+//    }
 
 //    @Test
 //    public void addUser(){

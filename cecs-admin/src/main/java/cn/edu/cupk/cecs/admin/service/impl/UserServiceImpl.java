@@ -40,20 +40,13 @@ public class UserServiceImpl implements UserService {
     private RoleMapper roleMapper;
 
     @Override
-    public PageResult findUserList(Integer currentPage, Integer pageSize, String str, Integer status){
-        if (str == null)
-            str = "";
-        LambdaQueryWrapper<User> userLambdaQueryWrapper = new LambdaQueryWrapper<>();
-        userLambdaQueryWrapper
-                .eq(User::getStatus,status)
-                .apply("user.id = user_role.user_id")
-                .apply("role.id = user_role.role_id")
-                .like(User::getName, str);
-
-        Page<UserForm> userPage = new Page<>(currentPage, pageSize);
-        IPage<UserForm> userIPage = userMapper.findUser(userPage, userLambdaQueryWrapper);
-        PageResult result = PageResult.success(userIPage);
-        return  result;
+    public PageResult findUserList(Integer currentPage, Integer pageSize, String name){
+        String str = "%"+name+"%";
+        Page<UserForm> userPage = new Page<>(currentPage , pageSize);
+        IPage<UserForm> userIPage = userMapper.findUser(userPage, str);
+//        System.out.println("总页数： "+userIPage.getPages());
+        PageResult<UserForm> result = PageResult.success(userIPage);
+        return result;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package cn.edu.cupk.cecs.watchkeeper.controller.pojo.entity;
+package cn.edu.cupk.cecs.watchkeeper.pojo.entity;
 
 import cn.hutool.core.date.DateTime;
 import com.baomidou.mybatisplus.annotation.*;
@@ -37,7 +37,7 @@ public class User {
     private Integer status;
 
     @TableField("create_time")
-    private DateTime createTime;
+    private String createTime;
 
     @TableLogic(value = "0",delval = "1")
     private Integer deleted;

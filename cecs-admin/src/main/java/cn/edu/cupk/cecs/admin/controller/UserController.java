@@ -27,10 +27,9 @@ public class UserController {
     @GetMapping("/users")
     public PageResult selectUsers(@RequestParam(defaultValue = "1",value = "pageNum") Integer currentPage,
                                   @RequestParam(defaultValue = "5",value = "pageSize") Integer pageSize,
-                                  @RequestParam(defaultValue = "",value = "str") String str,
-                                  @RequestParam(defaultValue = "0",value = "status") Integer status)
+                                  @RequestParam(defaultValue = "",value = "name") String name)
     {
-        return userService.findUserList(currentPage, pageSize, str, status);
+        return userService.findUserList(currentPage, pageSize, name);
     }
     @ResponseBody
     @PostMapping("/newUser")

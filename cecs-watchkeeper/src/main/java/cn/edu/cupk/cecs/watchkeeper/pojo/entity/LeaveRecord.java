@@ -1,4 +1,4 @@
-package cn.edu.cupk.cecs.watchkeeper.controller.pojo.entity;
+package cn.edu.cupk.cecs.watchkeeper.pojo.entity;
 
 import cn.hutool.core.date.DateTime;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -27,22 +27,24 @@ public class LeaveRecord {
 
     private long verifier;
 
-    @TableField("leave_time")
-    private DateTime leaveTime;
+    @TableField("leave_date")
+    private String leaveDate;
 
     @TableField("leave_start_time")
-    private DateTime startTime;
+    private String startTime;
 
     @TableField("leave_end_time")
-    private DateTime endTime;
+    private String endTime;
 
     @TableField("leave_matter")
-    private DateTime matter;
+    private String matter;
 
     private Integer status;
 
-    @TableField("audi_reason")
-    private String audiReason;
+    @TableField("audit_reason")
+    private String auditReason;
+
+    private Integer type;
 
     @TableLogic(value = "0",delval = "1")
     private Integer deleted;

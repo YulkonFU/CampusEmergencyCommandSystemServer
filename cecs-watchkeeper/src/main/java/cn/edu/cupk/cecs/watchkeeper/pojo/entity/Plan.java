@@ -1,4 +1,4 @@
-package cn.edu.cupk.cecs.watchkeeper.controller.pojo.entity;
+package cn.edu.cupk.cecs.watchkeeper.pojo.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;

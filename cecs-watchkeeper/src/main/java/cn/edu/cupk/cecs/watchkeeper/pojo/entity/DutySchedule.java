@@ -1,4 +1,4 @@
-package cn.edu.cupk.cecs.watchkeeper.controller.pojo.entity;
+package cn.edu.cupk.cecs.watchkeeper.pojo.entity;
 
 import cn.hutool.core.date.DateTime;
 import com.baomidou.mybatisplus.annotation.*;
@@ -13,24 +13,27 @@ import lombok.NoArgsConstructor;
  * @Description:
  */
 @Data
-@TableName("duty_log")
+@TableName("duty_schedule")
 @NoArgsConstructor
-public class DutyLog {
+public class DutySchedule {
 
-    @TableId(value = "log_id",type = IdType.AUTO)
+    @TableId(value = "schedule_id",type = IdType.AUTO)
     private long id;
 
     @TableField("user_id")
     private long userId;
 
-    @TableField("schedule_id")
-    private long scheduleId;
+    @TableField("duty_place")
+    private String dutyPlace;
 
-    @TableField("registration_time")
-    private DateTime registrationTime;
+    @TableField("duty_date")
+    private String dutyDate;
 
-    @TableField("log_result")
-    private String result;
+    @TableField("duty_start_time")
+    private String startTime;
+
+    @TableField("duty_end_time")
+    private String endTime;
 
     @TableLogic(value = "0",delval = "1")
     private Integer deleted;

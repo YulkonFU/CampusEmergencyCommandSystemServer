@@ -1,4 +1,4 @@
-package cn.edu.cupk.cecs.watchkeeper.controller.pojo.entity;
+package cn.edu.cupk.cecs.watchkeeper.pojo.entity;
 
 import cn.hutool.core.date.DateTime;
 import com.baomidou.mybatisplus.annotation.*;
@@ -27,13 +27,13 @@ public class Event {
 
     private long commander;
 
-    private String type;
+    private Integer type;
 
     @TableField("start_time")
-    private DateTime startTime;
+    private String startTime;
 
     @TableField("end_time")
-    private DateTime endTime;
+    private String endTime;
 
     private String location;
 

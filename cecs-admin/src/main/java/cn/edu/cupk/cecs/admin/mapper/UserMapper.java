@@ -32,10 +32,8 @@ public interface UserMapper extends BaseMapper<User> {
     */
 
 
-    @Select("SELECT * " +
-            " FROM user, user_role, role " +
-            " ${ew.customSqlSegment} ")
-    IPage<UserForm> findUser(IPage<UserForm> page, @Param("ew") Wrapper wrapper);
+
+    IPage<UserForm> findUser(IPage<UserForm> page, String name);
 
 
     UserRoleForm findUserDetailed(long id);
