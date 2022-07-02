@@ -53,4 +53,27 @@
             role.deleted = 0 AND
             `user`.username = #{username};
     </select>
+    <select id="findUserDetailed" resultType="cn.edu.cupk.admin.pojo.form.UserRoleForm">
+        SELECT
+            `user`.id,
+            `user`.username,
+            `user`.`name`,
+            `user`.`password`,
+            `user`.age,
+            `user`.sex,
+            `user`.phone_number,
+            `user`.email,
+            `role`.role_name
+        FROM
+            user_role
+                INNER JOIN
+            `user`
+            ON
+                user_role.user_id = `user`.id
+                INNER JOIN
+            role
+            ON
+                user_role.role_id = role.id
+        WHERE user.id = #{id};
+    </select>
 </mapper>

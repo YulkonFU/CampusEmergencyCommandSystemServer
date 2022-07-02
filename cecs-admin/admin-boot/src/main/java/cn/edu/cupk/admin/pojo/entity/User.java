@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
 
 /**
  * Created with Intellij IDEA
@@ -18,7 +19,7 @@ import lombok.NoArgsConstructor;
 @TableName("user")
 public class User {
     @TableId(value = "id",type = IdType.AUTO)
-    private long id;
+    private Long id;
 
     @TableField("username")
     private String username;
