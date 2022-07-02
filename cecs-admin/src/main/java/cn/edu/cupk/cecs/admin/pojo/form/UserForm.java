@@ -26,5 +26,17 @@ public class UserForm {
     @TableField("role_name")
     private String roleName;
 
-    private Integer status;
+//    private Integer status;
+
+    private Integer age;
+
+    private Integer sex;
+
+    @TableField("create_time")
+    private String creatTime;
+
+    @TableField("phone_number")
+    private String phoneNumber;
+
+    private String email;
 }

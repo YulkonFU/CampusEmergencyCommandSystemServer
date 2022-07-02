@@ -25,4 +25,32 @@
                 user_role.role_id = role.id
         WHERE user.id = #{id};
     </select>
+    <select id="findUser" resultType="cn.edu.cupk.cecs.admin.pojo.form.UserForm">
+        SELECT DISTINCT
+            `user`.id,
+            `user`.username,
+            `user`.`name`,
+            `user`.age,
+            `user`.sex,
+            `user`.create_time,
+            `user`.phone_number,
+            `user`.email,
+            role.role_name
+        FROM
+            `user`
+                LEFT JOIN
+            user_role
+            ON
+                `user`.id = user_role.user_id
+                LEFT JOIN
+            role
+            ON
+                user_role.role_id = role.id
+        WHERE
+            `user`.deleted = 0 AND
+            user_role.deleted = 0 AND
+            `user`.`name` LIKE #{name}
+        ORDER BY
+            `user`.id ASC
+    </select>
 </mapper>

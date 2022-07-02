@@ -20,4 +20,4 @@ spring:
           #lb开头代表基于gateway的负载均衡策略选择实例
           uri: lb://order-service
           #谓词配置
-
+      请接着设置
