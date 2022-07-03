@@ -2,19 +2,9 @@
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
     <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-    <option name="method" value="get" />
-    <option name="methodDescription" value="查询物资" />
+    <option name="method" value="getRemaining" />
     <option name="module" value="supply-boot" />
-    <option name="originUrl" value="/supply/{id}" />
-    <option name="pathParamMap">
-      <map>
-        <entry key="id">
-          <value>
-            <Object />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="url" value="/supply/1" />
+    <option name="originUrl" value="/supply/remaining" />
+    <option name="url" value="/supply/remaining" />
   </component>
 </project>

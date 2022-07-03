@@ -2,6 +2,7 @@ package cn.edu.cupk.panel.controller;
 
 import cn.edu.cupk.common.result.Result;
 import cn.edu.cupk.event.api.EventFeignClient;
+import cn.edu.cupk.supply.api.SupplyFeignClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,6 +25,9 @@ public class PanelController {
     @Resource
     private EventFeignClient eventFeignClient;
 
+    @Resource
+    private SupplyFeignClient supplyFeignClient;
+
     @GetMapping("/times")
     public Result getTimes() {
         return eventFeignClient.getEventTimes();
@@ -37,5 +41,10 @@ public class PanelController {
     @GetMapping("/week")
     public Result getWeek() {
         return eventFeignClient.getEventWeek();
+    }
+
+    @GetMapping("/remaining")
+    public Result getRemaining() {
+        return supplyFeignClient.getRemaining();
     }
 }

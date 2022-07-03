@@ -8,6 +8,78 @@
           <option name="code" value="200" />
           <option name="enableEnv" value="cecs-supply" />
           <option name="enableProject" value="cecs" />
+          <option name="method" value="getRemaining" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
+              <option name="method" value="getRemaining" />
+              <option name="methodDescription" value="New Request" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/supply/remaining" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/supply/remaining" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/remaining?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;查询成功&quot;,&quot;data&quot;:[{&quot;name&quot;:&quot;灭火器&quot;,&quot;amount&quot;:851},{&quot;name&quot;:&quot;急救设备&quot;,&quot;amount&quot;:100},{&quot;name&quot;:&quot;警棍&quot;,&quot;amount&quot;:500},{&quot;name&quot;:&quot;防毒面罩&quot;,&quot;amount&quot;:1}]}" />
+          <option name="url" value="/supply/remaining" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-supply" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="getRemaining" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
+              <option name="method" value="getRemaining" />
+              <option name="methodDescription" value="New Request" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/supply/remaining" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/supply/remaining" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/remaining?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;查询成功&quot;,&quot;data&quot;:[{&quot;name&quot;:&quot;灭火器&quot;,&quot;amount&quot;:851},{&quot;name&quot;:&quot;急救设备&quot;,&quot;amount&quot;:100},{&quot;name&quot;:&quot;警棍&quot;,&quot;amount&quot;:500},{&quot;name&quot;:&quot;防毒面罩&quot;,&quot;amount&quot;:1}]}" />
+          <option name="url" value="/supply/remaining" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
+          <option name="code" value="500" />
+          <option name="enableEnv" value="cecs-supply" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="getRemaining" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
+              <option name="method" value="getRemaining" />
+              <option name="methodDescription" value="New Request" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/supply/remaining" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/supply/remaining" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/remaining?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T12:06:11.313+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/supply/remaining&quot;}" />
+          <option name="url" value="/supply/remaining" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-supply" />
+          <option name="enableProject" value="cecs" />
           <option name="method" value="get" />
           <option name="methodType" value="GET" />
           <option name="name" value="查询物资" />
@@ -437,84 +509,6 @@
           </option>
           <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
           <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:30.370+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
-          <option name="url" value="/user/login" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
-          <option name="code" value="404" />
-          <option name="enableEnv" value="cecs-admin" />
-          <option name="enableProject" value="cecs" />
-          <option name="method" value="login" />
-          <option name="methodType" value="POST" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
-              <option name="method" value="login" />
-              <option name="methodDescription" value="New Request" />
-              <option name="methodType" value="POST" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/user/login" />
-              <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/user/login" />
-              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
-              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
-              <option name="urlParamsKeyValueListJson" value="[]" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:29.853+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
-          <option name="url" value="/user/login" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
-          <option name="code" value="404" />
-          <option name="enableEnv" value="cecs-admin" />
-          <option name="enableProject" value="cecs" />
-          <option name="method" value="login" />
-          <option name="methodType" value="POST" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
-              <option name="method" value="login" />
-              <option name="methodDescription" value="New Request" />
-              <option name="methodType" value="POST" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/user/login" />
-              <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/user/login" />
-              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
-              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
-              <option name="urlParamsKeyValueListJson" value="[]" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:29.252+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
-          <option name="url" value="/user/login" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
-          <option name="code" value="404" />
-          <option name="enableEnv" value="cecs-admin" />
-          <option name="enableProject" value="cecs" />
-          <option name="method" value="login" />
-          <option name="methodType" value="POST" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
-              <option name="method" value="login" />
-              <option name="methodDescription" value="New Request" />
-              <option name="methodType" value="POST" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/user/login" />
-              <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/user/login" />
-              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
-              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
-              <option name="urlParamsKeyValueListJson" value="[]" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:27.991+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
           <option name="url" value="/user/login" />
         </ResponseHistory>
       </list>
