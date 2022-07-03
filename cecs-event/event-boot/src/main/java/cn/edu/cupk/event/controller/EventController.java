@@ -3,7 +3,6 @@ package cn.edu.cupk.event.controller;
 import cn.edu.cupk.common.result.PageResult;
 import cn.edu.cupk.common.result.Result;
 import cn.edu.cupk.event.pojo.entity.Event;
-import cn.edu.cupk.event.pojo.entity.enums.EventStatusEnum;
 import cn.edu.cupk.event.pojo.query.EventPageQuery;
 import cn.edu.cupk.event.service.EventService;
 import lombok.extern.slf4j.Slf4j;
@@ -66,7 +65,8 @@ public class EventController {
             return Result.failed(HttpStatus.BAD_REQUEST.value(), "无此事件");
         }
 
-        event.setStatus(EventStatusEnum.getByValue(status));
+        // event.setStatus(EventStatusEnum.getByValue(status));
+        // event.setStatus(status)
         event.setDescription(event.getDescription() + "，终止原因：" + reason);
         event.setEndTime(LocalDateTime.now());
         log.info("event after process: {}", event);

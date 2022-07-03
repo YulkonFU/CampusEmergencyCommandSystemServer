@@ -16,6 +16,8 @@ public class EventPageQuery extends BasePageQuery {
 
     private String keywords;
 
+    private Integer status;
+
 
 /*     @ApiModelProperty("关键字(用户名/昵称/手机号)")
     private String keywords;

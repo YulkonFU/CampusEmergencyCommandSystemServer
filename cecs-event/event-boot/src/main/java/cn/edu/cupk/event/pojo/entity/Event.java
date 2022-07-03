@@ -55,6 +55,6 @@ public class Event {
     private EventLevelEnum level;
 
     @TableField("status")
-    private EventStatusEnum status;
-
+    // private EventStatusEnum status;
+    private Integer status;
 }

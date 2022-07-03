@@ -4,6 +4,7 @@ import cn.edu.cupk.common.result.PageResult;
 import cn.edu.cupk.common.result.Result;
 import cn.edu.cupk.event.mapper.EventMapper;
 import cn.edu.cupk.event.pojo.entity.Event;
+import cn.edu.cupk.event.pojo.entity.enums.EventStatusEnum;
 import cn.edu.cupk.event.pojo.entity.enums.EventTypeEnum;
 import cn.edu.cupk.event.pojo.query.EventPageQuery;
 import cn.edu.cupk.event.pojo.vo.EventTimesVO;
@@ -37,16 +38,16 @@ public class EventServiceImpl extends ServiceImpl<EventMapper, Event> implements
     public PageResult listEventPages(EventPageQuery queryParams) {
         IPage<Event> page = new Page<>(queryParams.getPageNum(), queryParams.getPageSize());
         LambdaQueryWrapper<Event> wrapper = new LambdaQueryWrapper<Event>();
-        wrapper.eq(Event::getDeleted, 0)
+        wrapper.eq(queryParams.getStatus() != null, Event::getStatus, queryParams.getStatus())
                 .like(StringUtils.hasText(queryParams.getKeywords()),Event::getEventId, queryParams.getKeywords())
                 .or().like(StringUtils.hasText(queryParams.getKeywords()),Event::getPlanId, queryParams.getKeywords())
                 .or().like(StringUtils.hasText(queryParams.getKeywords()),Event::getReporter, queryParams.getKeywords())
                 .or().like(StringUtils.hasText(queryParams.getKeywords()),Event::getType, queryParams.getKeywords())
                 .or().like(StringUtils.hasText(queryParams.getKeywords()),Event::getDescription, queryParams.getKeywords())
                 .or().like(StringUtils.hasText(queryParams.getKeywords()),Event::getLocation, queryParams.getKeywords())
-                .or().like(StringUtils.hasText(queryParams.getKeywords()),Event::getStatus, queryParams.getKeywords())
                 .or().like(StringUtils.hasText(queryParams.getKeywords()),Event::getCommander, queryParams.getKeywords())
                 .or().like(StringUtils.hasText(queryParams.getKeywords()),Event::getLevel, queryParams.getKeywords());
+
         IPage<Event> eventIPage = eventMapper.selectPage(page, wrapper);
         return PageResult.success(eventIPage);
     }
