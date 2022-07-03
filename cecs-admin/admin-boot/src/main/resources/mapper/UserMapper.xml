@@ -48,9 +48,6 @@
         WHERE
             `user`.id = user_role.user_id AND
             user_role.role_id = role.id AND
-            `user`.deleted = 0 AND
-            user_role.deleted = 0 AND
-            role.deleted = 0 AND
             `user`.username = #{username};
     </select>
     <select id="findUserDetailed" resultType="cn.edu.cupk.admin.pojo.form.UserRoleForm">

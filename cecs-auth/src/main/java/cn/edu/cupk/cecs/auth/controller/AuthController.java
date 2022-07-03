@@ -16,6 +16,7 @@ import javax.annotation.Resource;
  */
 
 @RestController
+@RequestMapping
 public class AuthController {
 
     @Resource
