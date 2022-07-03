@@ -58,12 +58,12 @@ public class EventController {
     @ResponseBody
     public Result terminateEvent(@RequestParam("id") Long id, @RequestParam("status") Integer status,
                                  @RequestParam("reason") String reason) {
-        if(id <= 0 || (status != 3 && status != 4)) {
+        if (id <= 0 || (status != 3 && status != 4)) {
             return Result.failed(HttpStatus.BAD_REQUEST.value(), "参数错误");
         }
         Event event = eventService.getById(id);
         log.info("event from DB: {}", event);
-        if(event == null) {
+        if (event == null) {
             return Result.failed(HttpStatus.BAD_REQUEST.value(), "无此事件");
         }
 
@@ -80,4 +80,15 @@ public class EventController {
         return eventService.getEventTimes();
     }
 
+    @GetMapping("/periods")
+    @ResponseBody
+    public Result getEventPeriods() {
+        return eventService.getEventPeriod();
+    }
+
+    @GetMapping("/week")
+    @ResponseBody
+    public Result getEventWeek() {
+        return eventService.getEventWeek();
+    }
 }

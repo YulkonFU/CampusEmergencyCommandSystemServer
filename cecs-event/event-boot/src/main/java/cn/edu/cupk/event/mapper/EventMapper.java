@@ -1,9 +1,8 @@
 package cn.edu.cupk.event.mapper;
 
+import cn.edu.cupk.event.pojo.dto.EventTimesItemDTO;
 import cn.edu.cupk.event.pojo.entity.Event;
-import cn.edu.cupk.event.pojo.query.EventPageQuery;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -22,5 +21,9 @@ import java.util.Map;
 public interface EventMapper extends BaseMapper<Event> {
 
     List<Map<String, Object> > getEventTimes();
+
+    List<Map<String, Integer>> getEventPeriod();
+
+    List<EventTimesItemDTO> getWeekEvent();
 }
 

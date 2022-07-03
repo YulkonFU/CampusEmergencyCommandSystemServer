@@ -63,4 +63,15 @@ public class EventServiceImpl extends ServiceImpl<EventMapper, Event> implements
         }
         return Result.success("查询成功", eventTimesVOS);
     }
+
+    @Override
+    public Result getEventPeriod() {
+        return Result.success("查询成功", eventMapper.getEventPeriod());
+    }
+
+    @Override
+    public Result getEventWeek() {
+        // TODO 一周事件情况
+        return Result.success("查询成功", eventMapper.getWeekEvent());
+    }
 }

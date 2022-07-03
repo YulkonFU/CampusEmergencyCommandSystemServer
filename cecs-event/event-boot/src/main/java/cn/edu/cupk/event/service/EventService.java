@@ -17,4 +17,8 @@ public interface EventService extends IService<Event> {
     PageResult listEventPages(EventPageQuery queryParams);
 
     Result getEventTimes();
+
+    Result getEventPeriod();
+
+    Result getEventWeek();
 }

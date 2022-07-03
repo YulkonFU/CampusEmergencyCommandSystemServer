@@ -8,8 +8,6 @@ import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 /**
  * @author 赵希奥
  * @date 2022/7/2 23:54
@@ -28,5 +26,11 @@ class EventMapperTest {
     void getEventTimes() {
         List<Map<String, Object>> eventTimes = eventMapper.getEventTimes();
         System.out.println(eventTimes);
+    }
+
+    @Test
+    void getEventPeriod() {
+        List<Map<String, Integer>> eventPeriod = eventMapper.getEventPeriod();
+        System.out.println(eventPeriod);
     }
 }

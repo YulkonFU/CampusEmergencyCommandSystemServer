@@ -39,4 +39,29 @@
         GROUP BY
             `event`.type
     </select>
+    <select id="getEventPeriod" resultType="java.util.Map">
+        SELECT DATE_FORMAT( start_time, '%H' ) AS hour,
+                COUNT( * ) AS count
+        FROM
+            `event`
+        GROUP BY
+            start_time
+        ORDER BY
+            count DESC;
+    </select>
+<!--    查询最近一个星期的数据-->
+    <select id="getWeekEvent" resultType="cn.edu.cupk.event.pojo.dto.EventTimesItemDTO">
+        SELECT
+            start_time AS day,
+            type,
+            COUNT(*) AS count
+        FROM
+            eventTypeTimes
+        WHERE
+            start_time >= DATE_ADD(NOW(), INTERVAL -7 DAY)
+        GROUP BY
+            day, type
+        ORDER BY
+            day DESC;
+    </select>
 </mapper>

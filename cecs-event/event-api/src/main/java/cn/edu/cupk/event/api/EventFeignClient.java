@@ -5,6 +5,7 @@ import cn.edu.cupk.event.api.fallback.EventFeignFallbackClient;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @author 赵希奥
@@ -15,11 +16,16 @@ import org.springframework.web.bind.annotation.GetMapping;
  */
 
 @Component
-@FeignClient(value = "cecs-event", fallback = EventFeignFallbackClient.class)
+@FeignClient(value = "cecs-event", contextId = "panel2event", fallback = EventFeignFallbackClient.class)
 public interface EventFeignClient {
 
      @GetMapping("/events/times")
-     public Result getEventTimes();
+     Result getEventTimes();
+
+     @GetMapping("/events/periods")
+     Result getEventPeriod();
 
 
+     @GetMapping("/events/week")
+     Result getEventWeek();
 }
