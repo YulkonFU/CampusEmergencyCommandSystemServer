@@ -45,6 +45,8 @@ spring:
     nacos:
       discovery:
         server-addr: http://nat.ckxgzxa.top:33300
+        username: rst
+        password: rst
       config:
         server-addr: http://nat.ckxgzxa.top:33300
         file-extension: yaml

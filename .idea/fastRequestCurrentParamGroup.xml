@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
-    <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-    <option name="method" value="getRemaining" />
-    <option name="module" value="supply-boot" />
-    <option name="originUrl" value="/supply/remaining" />
-    <option name="url" value="/supply/remaining" />
+    <option name="className" value="cn.edu.cupk.cecs.schedule.controller.DutyLogController" />
+    <option name="method" value="getDutyLog" />
+    <option name="module" value="cecs-dutyschedule" />
+    <option name="originUrl" value="/dutyLog/list" />
+    <option name="requestParamMap">
+      <map>
+        <entry key="date">
+          <value>
+            <Object />
+          </value>
+        </entry>
+        <entry key="pageNum">
+          <value>
+            <Object />
+          </value>
+        </entry>
+        <entry key="pageSize">
+          <value>
+            <Object />
+          </value>
+        </entry>
+        <entry key="str">
+          <value>
+            <Object />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="url" value="/dutyLog/list" />
   </component>
 </project>

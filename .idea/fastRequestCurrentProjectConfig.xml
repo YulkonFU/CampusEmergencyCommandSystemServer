@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentProjectConfig">
-    <option name="domain" value="http://localhost:8006" />
-    <option name="enableEnv" value="cecs-supply" />
+    <option name="domain" value="http://localhost:8010" />
+    <option name="enableEnv" value="schedule" />
     <option name="enableProject" value="cecs" />
     <option name="urlParamsKeyValueList">
       <list>

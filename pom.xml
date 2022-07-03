@@ -19,6 +19,9 @@
         <module>cecs-watchkeeper</module>
         <module>cecs-supply</module>
         <module>cecs-plan</module>
+        <module>cecs-test</module>
+        <module>cecs-dutyschedule</module>
+        <module>cecs-humanResource</module>
     </modules>
 
     <parent>

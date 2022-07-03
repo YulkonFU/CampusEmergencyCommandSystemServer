@@ -17,6 +17,7 @@
         <module name="event-boot" />
         <module name="admin-api" />
         <module name="cecs-gateway" />
+        <module name="cecs-test" />
         <module name="event-api" />
         <module name="admin-boot" />
         <module name="common-redis" />
@@ -24,30 +25,25 @@
         <module name="supply-api" />
         <module name="common-mybatis" />
         <module name="config-server" />
+        <module name="cecs-humanResource" />
         <module name="supply-boot" />
         <module name="cecs-auth" />
+        <module name="cecs-dutyschedule" />
         <module name="common-web" />
         <module name="order-service" />
         <module name="plan-boot" />
         <module name="common-core" />
       </profile>
-      <profile name="Annotation profile for cecs-plan" enabled="true">
+      <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.18/lombok-1.18.18.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.0.RC1/mapstruct-processor-1.5.0.RC1.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.0.RC1/mapstruct-1.5.0.RC1.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.18/lombok-1.18.18.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.0.RC1/mapstruct-processor-1.5.0.RC1.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.0.RC1/mapstruct-1.5.0.RC1.jar" />
-        </processorPath>
-        <module name="cecs-plan" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common-jwt" target="1.8" />
       <module name="config-server" target="1.8" />
+      <module name="demo" target="1.8" />
       <module name="gateway" target="1.8" />
       <module name="gateway (1)" target="1.8" />
       <module name="gateway (2)" target="1.8" />
@@ -67,17 +63,22 @@
       <module name="cecs-admin" options="-parameters" />
       <module name="cecs-auth" options="-parameters" />
       <module name="cecs-common" options="-parameters" />
+      <module name="cecs-dutyschedule" options="-parameters" />
       <module name="cecs-event" options="-parameters" />
       <module name="cecs-gateway" options="-parameters" />
+      <module name="cecs-humanResource" options="-parameters" />
       <module name="cecs-panel" options="-parameters" />
       <module name="cecs-plan" options="-parameters" />
       <module name="cecs-supply" options="-parameters" />
+      <module name="cecs-test" options="-parameters" />
       <module name="cecs-watchkeeper" options="-parameters" />
       <module name="common-core" options="-parameters" />
+      <module name="common-jwt" options="-parameters" />
       <module name="common-mybatis" options="-parameters" />
       <module name="common-redis" options="-parameters" />
       <module name="common-web" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="demo" options="-parameters" />
       <module name="event-api" options="-parameters" />
       <module name="event-boot" options="-parameters" />
       <module name="gateway" options="-parameters" />

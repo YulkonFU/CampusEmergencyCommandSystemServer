@@ -12,7 +12,7 @@ import org.springframework.web.util.pattern.PathPatternParser;
  * @date 2022/7/1 16:18
  * @github https://github.com/CKXGZXA
  * @gitee https://gitee.com/ckxgzxa
- * @description:
+ * @description: 跨域配置
  */
 @Configuration
 public class CorsConfig {
