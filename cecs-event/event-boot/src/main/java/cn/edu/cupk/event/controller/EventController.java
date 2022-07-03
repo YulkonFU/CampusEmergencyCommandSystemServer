@@ -66,7 +66,7 @@ public class EventController {
         }
 
         // event.setStatus(EventStatusEnum.getByValue(status));
-        // event.setStatus(status)
+        event.setStatus(status);
         event.setDescription(event.getDescription() + "，终止原因：" + reason);
         event.setEndTime(LocalDateTime.now());
         log.info("event after process: {}", event);
