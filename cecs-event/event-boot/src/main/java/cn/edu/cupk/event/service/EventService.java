@@ -3,8 +3,11 @@ package cn.edu.cupk.event.service;
 import cn.edu.cupk.common.result.PageResult;
 import cn.edu.cupk.common.result.Result;
 import cn.edu.cupk.event.pojo.entity.Event;
+import cn.edu.cupk.event.pojo.entity.Source;
 import cn.edu.cupk.event.pojo.query.EventPageQuery;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * @author 赵希奥
@@ -21,4 +24,6 @@ public interface EventService extends IService<Event> {
     Result getEventPeriod();
 
     Result getEventWeek();
+
+    Boolean handlingEvent(long eventId, List<Source> humanResource, List<Source> goodsResource);
 }

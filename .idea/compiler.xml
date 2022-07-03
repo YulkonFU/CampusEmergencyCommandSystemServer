@@ -3,11 +3,6 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-      </profile>
       <profile name="Annotation profile for cecs" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -24,8 +19,8 @@
         <module name="cecs-gateway" />
         <module name="event-api" />
         <module name="admin-boot" />
-        <module name="cecs-watchkeeper" />
         <module name="common-redis" />
+        <module name="cecs-watchkeeper" />
         <module name="supply-api" />
         <module name="common-mybatis" />
         <module name="config-server" />
@@ -33,7 +28,22 @@
         <module name="cecs-auth" />
         <module name="common-web" />
         <module name="order-service" />
+        <module name="plan-boot" />
         <module name="common-core" />
+      </profile>
+      <profile name="Annotation profile for cecs-plan" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.18/lombok-1.18.18.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.0.RC1/mapstruct-processor-1.5.0.RC1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.0.RC1/mapstruct-1.5.0.RC1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.18/lombok-1.18.18.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.0.RC1/mapstruct-processor-1.5.0.RC1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.0.RC1/mapstruct-1.5.0.RC1.jar" />
+        </processorPath>
+        <module name="cecs-plan" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -60,6 +70,7 @@
       <module name="cecs-event" options="-parameters" />
       <module name="cecs-gateway" options="-parameters" />
       <module name="cecs-panel" options="-parameters" />
+      <module name="cecs-plan" options="-parameters" />
       <module name="cecs-supply" options="-parameters" />
       <module name="cecs-watchkeeper" options="-parameters" />
       <module name="common-core" options="-parameters" />
@@ -75,6 +86,7 @@
       <module name="nacos-provider" options="-parameters" />
       <module name="nacos-provider2" options="-parameters" />
       <module name="order-service" options="-parameters" />
+      <module name="plan-boot" options="-parameters" />
       <module name="supply-api" options="-parameters" />
       <module name="supply-boot" options="-parameters" />
       <module name="warehouse-service" options="-parameters" />

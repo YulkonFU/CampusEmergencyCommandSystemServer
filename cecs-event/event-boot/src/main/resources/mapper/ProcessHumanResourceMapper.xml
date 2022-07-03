@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.edu.cupk.event.mapper.ProcessHumanResourceMapper">
+    <insert id="insertList" parameterType="cn.edu.cupk.event.pojo.entity.HumanResource">
+        INSERT INTO process_human(process_id, human_id, amount)
+        <foreach collection="selectList" item="item" index="index" separator=",">
+            values (#{processId},#{item.id},#{item.number})
+        </foreach>
+    </insert>
+</mapper>
