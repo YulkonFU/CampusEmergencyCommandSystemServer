@@ -8,495 +8,514 @@
           <option name="code" value="200" />
           <option name="enableEnv" value="cecs-supply" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="update" />
-          <option name="methodType" value="PUT" />
+          <option name="method" value="get" />
+          <option name="methodType" value="GET" />
+          <option name="name" value="查询物资" />
           <option name="paramGroup">
             <ParamGroupCollection>
-              <option name="bodyKeyValueListJson" value="{&#10;  &quot;id&quot;: 1,&#10;  &quot;name&quot;: &quot;灭火器&quot;,&#10;&#10;}" />
               <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-              <option name="jsonDocument" value="{&#10;  &quot;id&quot;: &quot;No comment,Value =1&quot;,&#10;  &quot;name&quot;: &quot;No comment,Value =name_i1zfh&quot;,&#10;  &quot;category&quot;: &quot;No comment,Value =XIAOFANG&quot;,&#10;  &quot;inventory&quot;: &quot;No comment,Value =1&quot;,&#10;  &quot;deleted&quot;: &quot;No comment,Value =1&quot;&#10;}" />
-              <option name="method" value="update" />
-              <option name="methodDescription" value="New Request" />
-              <option name="methodType" value="PUT" />
+              <option name="method" value="get" />
+              <option name="methodDescription" value="查询物资" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/supply/" />
-              <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/supply/" />
+              <option name="originUrl" value="/supply/{id}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="url" value="/supply/6" />
               <option name="urlEncodedKeyValueListJson" value="[]" />
               <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;    Content-Length: 27&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;name&quot;:&quot;灭火器&quot;,&quot;id&quot;:1}&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;更新成功&quot;,&quot;data&quot;:null}" />
-          <option name="url" value="/supply/" />
+          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/6?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:404,&quot;msg&quot;:&quot;未找到该记录&quot;,&quot;data&quot;:null}" />
+          <option name="url" value="/supply/6" />
         </ResponseHistory>
         <ResponseHistory>
           <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
           <option name="code" value="200" />
           <option name="enableEnv" value="cecs-supply" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="update" />
-          <option name="methodType" value="PUT" />
+          <option name="method" value="get" />
+          <option name="methodType" value="GET" />
+          <option name="name" value="查询物资" />
           <option name="paramGroup">
             <ParamGroupCollection>
-              <option name="bodyKeyValueListJson" value="{&#10;  &quot;id&quot;: 1,&#10;  &quot;name&quot;: &quot;警棍儿&quot;,&#10;&#10;}" />
               <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-              <option name="jsonDocument" value="{&#10;  &quot;id&quot;: &quot;No comment,Value =1&quot;,&#10;  &quot;name&quot;: &quot;No comment,Value =name_i1zfh&quot;,&#10;  &quot;category&quot;: &quot;No comment,Value =XIAOFANG&quot;,&#10;  &quot;inventory&quot;: &quot;No comment,Value =1&quot;,&#10;  &quot;deleted&quot;: &quot;No comment,Value =1&quot;&#10;}" />
-              <option name="method" value="update" />
-              <option name="methodDescription" value="New Request" />
-              <option name="methodType" value="PUT" />
+              <option name="method" value="get" />
+              <option name="methodDescription" value="查询物资" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/supply/" />
-              <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/supply/" />
+              <option name="originUrl" value="/supply/{id}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="url" value="/supply/1" />
               <option name="urlEncodedKeyValueListJson" value="[]" />
               <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;    Content-Length: 27&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;name&quot;:&quot;警棍儿&quot;,&quot;id&quot;:1}&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;更新成功&quot;,&quot;data&quot;:null}" />
-          <option name="url" value="/supply/" />
+          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/1?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;OK&quot;,&quot;data&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;灭火器&quot;,&quot;category&quot;:&quot;XIAOFANG&quot;,&quot;inventory&quot;:851,&quot;deleted&quot;:0}}" />
+          <option name="url" value="/supply/1" />
         </ResponseHistory>
         <ResponseHistory>
           <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
           <option name="code" value="200" />
           <option name="enableEnv" value="cecs-supply" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="listEventPages" />
+          <option name="method" value="get" />
           <option name="methodType" value="GET" />
+          <option name="name" value="查询物资" />
           <option name="paramGroup">
             <ParamGroupCollection>
               <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-              <option name="method" value="listEventPages" />
-              <option name="methodDescription" value="New Request" />
+              <option name="method" value="get" />
+              <option name="methodDescription" value="查询物资" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/supply/list" />
-              <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/supply/list" />
+              <option name="originUrl" value="/supply/{id}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="url" value="/supply/1" />
               <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:false,&quot;key&quot;:&quot;keywords&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;keywords_cnu1t&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageNum&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:1},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageSize&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;3&quot;}]" />
-              <option name="urlParamsKeyValueListText" value="keywords=&#10;&amp;pageNum=1&#10;&amp;pageSize=3" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/list?=&amp;pageSize=3&amp;pageNum=1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;data&quot;:{&quot;total&quot;:3,&quot;list&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;灭火器&quot;,&quot;category&quot;:&quot;XIAOFANG&quot;,&quot;inventory&quot;:850,&quot;deleted&quot;:0},{&quot;id&quot;:2,&quot;name&quot;:&quot;急救设备&quot;,&quot;category&quot;:&quot;YILIAO&quot;,&quot;inventory&quot;:100,&quot;deleted&quot;:0},{&quot;id&quot;:3,&quot;name&quot;:&quot;警棍&quot;,&quot;category&quot;:&quot;JINGYONG&quot;,&quot;inventory&quot;:500,&quot;deleted&quot;:0}]},&quot;msg&quot;:&quot;OK&quot;}" />
-          <option name="url" value="/supply/list" />
+          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/1?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:404,&quot;msg&quot;:&quot;未找到该记录&quot;,&quot;data&quot;:null}" />
+          <option name="url" value="/supply/1" />
         </ResponseHistory>
         <ResponseHistory>
           <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
           <option name="code" value="200" />
           <option name="enableEnv" value="cecs-supply" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="listEventPages" />
-          <option name="methodType" value="GET" />
+          <option name="method" value="delete" />
+          <option name="methodType" value="DELETE" />
           <option name="paramGroup">
             <ParamGroupCollection>
               <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-              <option name="method" value="listEventPages" />
+              <option name="method" value="delete" />
               <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="DELETE" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/supply/list" />
-              <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/supply/list" />
+              <option name="originUrl" value="/supply/{id}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="url" value="/supply/1" />
               <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:false,&quot;key&quot;:&quot;keywords&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;keywords_cnu1t&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageNum&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:1},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageSize&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;3&quot;}]" />
-              <option name="urlParamsKeyValueListText" value="keywords=&#10;&amp;pageNum=1&#10;&amp;pageSize=3" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/list?=&amp;pageSize=3&amp;pageNum=1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;data&quot;:{&quot;total&quot;:3,&quot;list&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;灭火器&quot;,&quot;category&quot;:&quot;XIAOFANG&quot;,&quot;inventory&quot;:900,&quot;deleted&quot;:0},{&quot;id&quot;:2,&quot;name&quot;:&quot;急救设备&quot;,&quot;category&quot;:&quot;YILIAO&quot;,&quot;inventory&quot;:100,&quot;deleted&quot;:0},{&quot;id&quot;:3,&quot;name&quot;:&quot;警棍&quot;,&quot;category&quot;:&quot;JINGYONG&quot;,&quot;inventory&quot;:500,&quot;deleted&quot;:0}]},&quot;msg&quot;:&quot;OK&quot;}" />
-          <option name="url" value="/supply/list" />
+          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/1?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:204,&quot;msg&quot;:&quot;删除成功&quot;,&quot;data&quot;:null}" />
+          <option name="url" value="/supply/1" />
         </ResponseHistory>
         <ResponseHistory>
           <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-          <option name="code" value="200" />
-          <option name="enableEnv" value="cecs-supply" />
+          <option name="enableEnv" value="cecs-admin" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="listEventPages" />
-          <option name="methodType" value="GET" />
+          <option name="method" value="delete" />
+          <option name="methodType" value="DELETE" />
           <option name="paramGroup">
             <ParamGroupCollection>
               <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-              <option name="method" value="listEventPages" />
+              <option name="method" value="delete" />
               <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="DELETE" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/supply/list" />
-              <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/supply/list" />
+              <option name="originUrl" value="/supply/{id}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="url" value="/supply/1" />
               <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:false,&quot;key&quot;:&quot;keywords&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;keywords_cnu1t&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageNum&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:1},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageSize&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:1}]" />
-              <option name="urlParamsKeyValueListText" value="keywords=&#10;&amp;pageNum=1&#10;&amp;pageSize=1" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/list?=&amp;pageSize=1&amp;pageNum=1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;data&quot;:{&quot;total&quot;:3,&quot;list&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;灭火器&quot;,&quot;category&quot;:&quot;XIAOFANG&quot;,&quot;inventory&quot;:900,&quot;deleted&quot;:0}]},&quot;msg&quot;:&quot;OK&quot;}" />
-          <option name="url" value="/supply/list" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-          <option name="code" value="200" />
-          <option name="enableEnv" value="cecs-supply" />
-          <option name="enableProject" value="cecs" />
-          <option name="method" value="listEventPages" />
-          <option name="methodType" value="GET" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-              <option name="method" value="listEventPages" />
-              <option name="methodDescription" value="New Request" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/supply/list" />
-              <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/supply/list" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:false,&quot;key&quot;:&quot;keywords&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;keywords_cnu1t&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageNum&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:1},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageSize&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:1}]" />
-              <option name="urlParamsKeyValueListText" value="keywords=&#10;&amp;pageNum=1&#10;&amp;pageSize=1" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/list?=&amp;pageSize=1&amp;pageNum=1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;data&quot;:{&quot;total&quot;:3,&quot;list&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;灭火器&quot;,&quot;category&quot;:&quot;XIAOFANG&quot;,&quot;inventory&quot;:900,&quot;deleted&quot;:0}]},&quot;msg&quot;:&quot;OK&quot;}" />
-          <option name="url" value="/supply/list" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-          <option name="enableEnv" value="cecs-supply" />
-          <option name="enableProject" value="cecs" />
-          <option name="method" value="listEventPages" />
-          <option name="methodType" value="GET" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-              <option name="method" value="listEventPages" />
-              <option name="methodDescription" value="New Request" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/supply/list" />
-              <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/supply/list" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:false,&quot;key&quot;:&quot;keywords&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;keywords_cnu1t&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageNum&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:1},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageSize&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:1}]" />
-              <option name="urlParamsKeyValueListText" value="keywords=&#10;&amp;pageNum=1&#10;&amp;pageSize=1" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/list?=&amp;pageSize=1&amp;pageNum=1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="requestInfo" value="Request Url: http://localhost:8002/supply/1?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
           <option name="response" value="ConnectException: Connection refused: connect" />
-          <option name="url" value="/supply/list" />
+          <option name="url" value="/supply/1" />
         </ResponseHistory>
         <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-          <option name="code" value="500" />
-          <option name="enableEnv" value="cecs-supply" />
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="listEventPages" />
-          <option name="methodType" value="GET" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
           <option name="paramGroup">
             <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-              <option name="method" value="listEventPages" />
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
               <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="POST" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/supply/list" />
+              <option name="originUrl" value="/user/login" />
               <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/supply/list" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:false,&quot;key&quot;:&quot;keywords&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;keywords_cnu1t&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageNum&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:1},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageSize&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:1}]" />
-              <option name="urlParamsKeyValueListText" value="keywords=&#10;&amp;pageNum=1&#10;&amp;pageSize=1" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/list?=&amp;pageSize=1&amp;pageNum=1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T08:41:05.809+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/supply/list&quot;}" />
-          <option name="url" value="/supply/list" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-          <option name="code" value="500" />
-          <option name="enableEnv" value="cecs-supply" />
-          <option name="enableProject" value="cecs" />
-          <option name="method" value="listEventPages" />
-          <option name="methodType" value="GET" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-              <option name="method" value="listEventPages" />
-              <option name="methodDescription" value="New Request" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/supply/list" />
-              <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/supply/list" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:false,&quot;key&quot;:&quot;keywords&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;keywords_cnu1t&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageNum&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:1},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageSize&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:1}]" />
-              <option name="urlParamsKeyValueListText" value="keywords=&#10;&amp;pageNum=1&#10;&amp;pageSize=1" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/list?=&amp;pageSize=1&amp;pageNum=1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T08:37:22.474+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/supply/list&quot;}" />
-          <option name="url" value="/supply/list" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-          <option name="code" value="500" />
-          <option name="enableEnv" value="cecs-supply" />
-          <option name="enableProject" value="cecs" />
-          <option name="method" value="listEventPages" />
-          <option name="methodType" value="GET" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-              <option name="method" value="listEventPages" />
-              <option name="methodDescription" value="New Request" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/supply/list" />
-              <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/supply/list" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:false,&quot;key&quot;:&quot;keywords&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;keywords_cnu1t&quot;},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageNum&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:1},{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;pageSize&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:1}]" />
-              <option name="urlParamsKeyValueListText" value="keywords=&#10;&amp;pageNum=1&#10;&amp;pageSize=1" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8006/supply/list?=&amp;pageSize=1&amp;pageNum=1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T08:30:32.561+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/supply/list&quot;}" />
-          <option name="url" value="/supply/list" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-          <option name="code" value="200" />
-          <option name="enableEnv" value="cecs-event" />
-          <option name="enableProject" value="cecs" />
-          <option name="method" value="getEventTimes" />
-          <option name="methodType" value="GET" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-              <option name="method" value="getEventTimes" />
-              <option name="methodDescription" value="New Request" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/events/times" />
-              <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/events/times" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
               <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8001/events/times?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;查询成功&quot;,&quot;data&quot;:[{&quot;eventType&quot;:&quot;火灾&quot;,&quot;times&quot;:1},{&quot;eventType&quot;:&quot;爆炸&quot;,&quot;times&quot;:7}]}" />
-          <option name="url" value="/events/times" />
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:53:41.542+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
         </ResponseHistory>
         <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-          <option name="code" value="200" />
-          <option name="enableEnv" value="cecs-event" />
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="getEventTimes" />
-          <option name="methodType" value="GET" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
           <option name="paramGroup">
             <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-              <option name="method" value="getEventTimes" />
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
               <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="POST" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/events/times" />
+              <option name="originUrl" value="/user/login" />
               <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/events/times" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
               <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8001/events/times?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;查询成功&quot;,&quot;data&quot;:[{&quot;eventType&quot;:&quot;火灾&quot;,&quot;times&quot;:1},{&quot;eventType&quot;:&quot;爆炸&quot;,&quot;times&quot;:7}]}" />
-          <option name="url" value="/events/times" />
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:50:59.940+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
         </ResponseHistory>
         <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-          <option name="code" value="200" />
-          <option name="enableEnv" value="cecs-event" />
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="getEventTimes" />
-          <option name="methodType" value="GET" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
           <option name="paramGroup">
             <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-              <option name="method" value="getEventTimes" />
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
               <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="POST" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/events/times" />
+              <option name="originUrl" value="/user/login" />
               <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/events/times" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
               <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8001/events/times?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;查询成功&quot;,&quot;data&quot;:[{&quot;eventType&quot;:&quot;火灾&quot;,&quot;times&quot;:1},{&quot;eventType&quot;:&quot;爆炸&quot;,&quot;times&quot;:7}]}" />
-          <option name="url" value="/events/times" />
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:50:12.977+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
         </ResponseHistory>
         <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-          <option name="code" value="200" />
-          <option name="enableEnv" value="cecs-event" />
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="getEventTimes" />
-          <option name="methodType" value="GET" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
           <option name="paramGroup">
             <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-              <option name="method" value="getEventTimes" />
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
               <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="POST" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/events/times" />
+              <option name="originUrl" value="/user/login" />
               <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/events/times" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
               <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8001/events/times?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;查询成功&quot;,&quot;data&quot;:[{&quot;eventType&quot;:&quot;火灾&quot;,&quot;times&quot;:1},{&quot;eventType&quot;:&quot;爆炸&quot;,&quot;times&quot;:7}]}" />
-          <option name="url" value="/events/times" />
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:33:07.348+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
         </ResponseHistory>
         <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-          <option name="code" value="200" />
-          <option name="enableEnv" value="cecs-event" />
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="getEventPeriods" />
-          <option name="methodType" value="GET" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
           <option name="paramGroup">
             <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-              <option name="method" value="getEventPeriods" />
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
               <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="POST" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/events/periods" />
+              <option name="originUrl" value="/user/login" />
               <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/events/periods" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
               <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8001/events/periods?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;查询成功&quot;,&quot;data&quot;:[{&quot;hour&quot;:&quot;09&quot;,&quot;count&quot;:4},{&quot;hour&quot;:&quot;18&quot;,&quot;count&quot;:1},{&quot;hour&quot;:&quot;21&quot;,&quot;count&quot;:1},{&quot;hour&quot;:&quot;08&quot;,&quot;count&quot;:1},{&quot;hour&quot;:&quot;05&quot;,&quot;count&quot;:1}]}" />
-          <option name="url" value="/events/periods" />
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:34.025+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
         </ResponseHistory>
         <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-          <option name="code" value="500" />
-          <option name="enableEnv" value="cecs-event" />
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="getEventPeriods" />
-          <option name="methodType" value="GET" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
           <option name="paramGroup">
             <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-              <option name="method" value="getEventPeriods" />
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
               <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="POST" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/events/periods" />
+              <option name="originUrl" value="/user/login" />
               <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/events/periods" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
               <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8001/events/periods?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T04:17:35.788+00:00&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;path&quot;:&quot;/events/periods&quot;}" />
-          <option name="url" value="/events/periods" />
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:33.363+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
         </ResponseHistory>
         <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-          <option name="code" value="200" />
-          <option name="enableEnv" value="cecs-event" />
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="getEventTimes" />
-          <option name="methodType" value="GET" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
           <option name="paramGroup">
             <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-              <option name="method" value="getEventTimes" />
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
               <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="POST" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/events/times" />
+              <option name="originUrl" value="/user/login" />
               <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/events/times" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
               <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8001/events/times?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;查询成功&quot;,&quot;data&quot;:[{&quot;eventType&quot;:&quot;火灾&quot;,&quot;times&quot;:1},{&quot;eventType&quot;:&quot;爆炸&quot;,&quot;times&quot;:4}]}" />
-          <option name="url" value="/events/times" />
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:32.985+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
         </ResponseHistory>
         <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-          <option name="code" value="200" />
-          <option name="enableEnv" value="cecs-event" />
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="getEventTimes" />
-          <option name="methodType" value="GET" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
           <option name="paramGroup">
             <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-              <option name="method" value="getEventTimes" />
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
               <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="POST" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/events/times" />
+              <option name="originUrl" value="/user/login" />
               <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/events/times" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
               <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8001/events/times?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;OK&quot;,&quot;data&quot;:{&quot;code&quot;:200,&quot;msg&quot;:&quot;查询成功&quot;,&quot;data&quot;:[{&quot;eventType&quot;:&quot;火灾&quot;,&quot;times&quot;:1},{&quot;eventType&quot;:&quot;爆炸&quot;,&quot;times&quot;:4}]}}" />
-          <option name="url" value="/events/times" />
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:32.545+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
         </ResponseHistory>
         <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-          <option name="code" value="200" />
-          <option name="enableEnv" value="cecs-event" />
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="getEventTimes" />
-          <option name="methodType" value="GET" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
           <option name="paramGroup">
             <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-              <option name="method" value="getEventTimes" />
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
               <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="POST" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/events/times" />
+              <option name="originUrl" value="/user/login" />
               <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/events/times" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
               <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8001/events/times?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;OK&quot;,&quot;data&quot;:{&quot;code&quot;:200,&quot;msg&quot;:&quot;查询成功&quot;,&quot;data&quot;:[{&quot;eventType&quot;:&quot;火灾&quot;,&quot;times&quot;:1},{&quot;eventType&quot;:&quot;爆炸&quot;,&quot;times&quot;:4}]}}" />
-          <option name="url" value="/events/times" />
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:31.912+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
         </ResponseHistory>
         <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-          <option name="code" value="200" />
-          <option name="enableEnv" value="cecs-event" />
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="terminateEvent" />
-          <option name="methodType" value="PUT" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
           <option name="paramGroup">
             <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-              <option name="method" value="terminateEvent" />
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
               <option name="methodDescription" value="New Request" />
-              <option name="methodType" value="PUT" />
+              <option name="methodType" value="POST" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/events/terminate" />
+              <option name="originUrl" value="/user/login" />
               <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/events/terminate" />
-              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
-              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=4&#10;&amp;reason=reason_f7t19" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
               <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;终止成功&quot;,&quot;data&quot;:true}" />
-          <option name="url" value="/events/terminate" />
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:31.206+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/user/login" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:30.795+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/user/login" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:30.370+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/user/login" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:29.853+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/user/login" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:29.252+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+          <option name="code" value="404" />
+          <option name="enableEnv" value="cecs-admin" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="login" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.cecs.auth.controller.AuthController" />
+              <option name="method" value="login" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/user/login" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/user/login" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_0fj5b&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;password_gtrz6&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="username=username_0fj5b&#10;&amp;password=password_gtrz6" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8002/user/login?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-03T10:27:27.991+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/user/login&quot;}" />
+          <option name="url" value="/user/login" />
         </ResponseHistory>
       </list>
     </option>

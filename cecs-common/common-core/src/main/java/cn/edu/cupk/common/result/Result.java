@@ -22,6 +22,10 @@ public class Result<T> implements Serializable {
    private T data;
 
 
+    public static <T> Result<T> success(Integer code, String msg) {
+        return result(code, msg, null);
+    }
+
     public static <T> Result<T> success(String msg) {
         return result(HttpStatus.OK.value(), msg, null);
     }

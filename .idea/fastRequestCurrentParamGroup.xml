@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
-    <option name="bodyParamMap">
+    <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
+    <option name="method" value="get" />
+    <option name="methodDescription" value="查询物资" />
+    <option name="module" value="supply-boot" />
+    <option name="originUrl" value="/supply/{id}" />
+    <option name="pathParamMap">
       <map>
-        <entry key="supply">
+        <entry key="id">
           <value>
             <Object />
           </value>
         </entry>
       </map>
     </option>
-    <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
-    <option name="method" value="update" />
-    <option name="methodType" value="PUT" />
-    <option name="module" value="supply-boot" />
-    <option name="originUrl" value="/supply/" />
-    <option name="url" value="/supply/" />
+    <option name="url" value="/supply/1" />
   </component>
 </project>
