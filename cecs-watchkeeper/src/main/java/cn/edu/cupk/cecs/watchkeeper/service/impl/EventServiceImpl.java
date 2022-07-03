@@ -3,9 +3,7 @@ package cn.edu.cupk.cecs.watchkeeper.service.impl;
 import cn.edu.cupk.cecs.watchkeeper.mapper.EventMapper;
 import cn.edu.cupk.cecs.watchkeeper.mapper.UserMapper;
 import cn.edu.cupk.cecs.watchkeeper.pojo.entity.Event;
-import cn.edu.cupk.cecs.watchkeeper.pojo.form.EventForm;
-import cn.edu.cupk.cecs.watchkeeper.pojo.form.EventArray;
-import cn.edu.cupk.cecs.watchkeeper.pojo.form.EventList;
+import cn.edu.cupk.cecs.watchkeeper.pojo.form.*;
 import cn.edu.cupk.cecs.watchkeeper.pojo.tools.Result;
 import cn.edu.cupk.cecs.watchkeeper.service.EventService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -59,5 +57,29 @@ public class EventServiceImpl implements EventService {
         eventList.setList(eventArrays);
         Result<EventList> result = Result.success(eventList);
         return result;
+    }
+
+    @Override
+    public Result<EventPlanList> findEvents() {
+        List<EventPlanForm> eventPlanForms = eventMapper.findEventsAndPlan();
+        Integer num = eventPlanForms.size();
+        EventPlanList eventPlanList = new EventPlanList();
+        eventPlanList.setTotal(num);
+        eventPlanList.setList(eventPlanForms);
+        Result<EventPlanList> result = Result.success(eventPlanList);
+        return result;
+    }
+
+    @Override
+    public Boolean escalation(long eventId, Integer status) {
+        if(status > 0) status = 2;
+        else {
+            return false;
+        }
+        int flag = eventMapper.escalation(eventId,status);
+        if(flag == 1){
+            return true;
+        }
+        return false;
     }
 }

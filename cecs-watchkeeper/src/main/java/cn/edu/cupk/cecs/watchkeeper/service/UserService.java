@@ -12,7 +12,7 @@ import cn.edu.cupk.cecs.watchkeeper.pojo.tools.Result;
  */
 public interface UserService {
 
-    Result<User> getPersonalInformation(String username);
+    Result<User> getPersonalInformation(long userId);
 
     Result<User> changePassword(String password,String username);
 }

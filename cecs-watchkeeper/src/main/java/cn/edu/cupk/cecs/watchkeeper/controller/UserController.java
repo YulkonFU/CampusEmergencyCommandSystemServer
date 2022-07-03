@@ -26,8 +26,8 @@ public class UserController {
 
     @GetMapping("/personalInformation")
     @ResponseBody
-    public Result<User> getUserByUsername(String username){
-        return userService.getPersonalInformation(username);
+    public Result<User> getUserByUsername(long userId){
+        return userService.getPersonalInformation(userId);
     }
 
     @PatchMapping("/passwordModification")

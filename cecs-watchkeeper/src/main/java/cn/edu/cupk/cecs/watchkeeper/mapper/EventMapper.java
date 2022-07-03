@@ -2,6 +2,7 @@ package cn.edu.cupk.cecs.watchkeeper.mapper;
 
 import cn.edu.cupk.cecs.watchkeeper.pojo.entity.Event;
 import cn.edu.cupk.cecs.watchkeeper.pojo.form.EventArray;
+import cn.edu.cupk.cecs.watchkeeper.pojo.form.EventPlanForm;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -24,4 +25,9 @@ public interface EventMapper extends BaseMapper<Event> {
             "WHERE reporter = #{id} " +
             "ORDER BY start_time ASC")
     List<EventArray> searchEventList(@Param("id") long id);
+
+
+    List<EventPlanForm> findEventsAndPlan();
+
+    int escalation(long eventId,Integer status);
 }

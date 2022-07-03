@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.edu.cupk.cecs.watchkeeper.mapper.EventMapper">
+    <update id="escalation">
+        UPDATE `event`
+        SET `status` = #{status}
+        WHERE event_id = #{eventId}
+    </update>
+    <select id="findEventsAndPlan" resultType="cn.edu.cupk.cecs.watchkeeper.pojo.form.EventPlanForm">
+        SELECT DISTINCT
+            `event`.event_id,
+            `event`.start_time,
+            `event`.location,
+            `event`.type,
+            plan.content
+        FROM
+            `event`
+                INNER JOIN
+            plan
+            ON
+                `event`.plan_id = plan.plan_id
+        WHERE
+            `event`.`status` = 1 OR
+            `event`.`status` = 2
+        ORDER BY
+            `event`.start_time DESC
+    </select>
+</mapper>

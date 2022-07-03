@@ -31,9 +31,9 @@ public class UserServiceImpl implements UserService {
     * @Date: 2022/7/1
     */
     @Override
-    public Result<User> getPersonalInformation(String username) {
+    public Result<User> getPersonalInformation(long userId) {
         LambdaQueryWrapper<User> userLambdaQueryWrapper = new LambdaQueryWrapper<>();
-        userLambdaQueryWrapper.eq(User::getUsername,username);
+        userLambdaQueryWrapper.eq(User::getId,userId);
         User user = userMapper.selectOne(userLambdaQueryWrapper);
 
         Result<User> result = Result.success(user);

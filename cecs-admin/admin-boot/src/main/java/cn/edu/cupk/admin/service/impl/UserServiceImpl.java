@@ -58,9 +58,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 
         Page<UserForm> userPage = new Page<>(currentPage, pageSize);
         IPage<UserForm> userIPage = userMapper.findUser(userPage, userLambdaQueryWrapper);
-        PageResult result = PageResult.success("查询成功", userIPage);
+        PageResult result = PageResult.success( userIPage);
         return  result;
-
     }
 
     @Override
@@ -145,7 +144,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 //            userRole.setRoleId(roleID);
             int flagDelete = userRoleMapper.delete(userRoleLambdaQueryWrapper);
             if(flagDelete == 1){
-                userRole.setRoleId(RoleEnum.getRoleEnumByValue(userID));
+                userRole.setRoleId(RoleEnum.getRoleEnumByValue(roleID));
                 int flagInsert = userRoleMapper.insert(userRole);
                 if(flagInsert == 0) return Result.failed(403,"失败");
             }
