@@ -1,5 +1,21 @@
 ### 如何使用线上NACOS配置中心
 
+> 各服务端口:
+>
+> gateway: 80
+>
+> auth: 8003
+>
+> admin: 8002
+>
+> event: 8001
+> 
+> watchkeeper: 8004
+>
+> panel: 8005
+> 
+
+
 1. 引入如下依赖
 
    ```xml

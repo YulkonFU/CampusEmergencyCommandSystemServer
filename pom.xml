@@ -14,6 +14,9 @@
         <module>cecs-common</module>
         <module>cecs-admin</module>
         <module>cecs-gateway</module>
+        <module>cecs-panel</module>
+        <module>cecs-event</module>
+        <module>cecs-watchkeeper</module>
     </modules>
 
     <parent>

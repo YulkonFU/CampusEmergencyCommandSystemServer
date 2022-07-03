@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
-    <option name="className" value="cn.edu.cupk.admin.controller.UserController" />
-    <option name="method" value="getAuthInfoByUsername" />
-    <option name="module" value="admin-boot" />
-    <option name="originUrl" value="/users//username/{username}" />
-    <option name="pathParamMap">
-      <map>
-        <entry key="username">
-          <value>
-            <Object />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="url" value="/users//username/username_9fzlt" />
+    <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+    <option name="method" value="getEventTimes" />
+    <option name="module" value="event-boot" />
+    <option name="originUrl" value="/events/times" />
+    <option name="url" value="/events/times" />
   </component>
 </project>

@@ -17,16 +17,20 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.0.RC1/mapstruct-processor-1.5.0.RC1.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.0.RC1/mapstruct-1.5.0.RC1.jar" />
         </processorPath>
-        <module name="common-mybatis" />
-        <module name="config-server" />
+        <module name="cecs-panel" />
         <module name="warehouse-service" />
+        <module name="event-boot" />
         <module name="admin-api" />
         <module name="cecs-gateway" />
+        <module name="event-api" />
+        <module name="admin-boot" />
+        <module name="cecs-watchkeeper" />
+        <module name="common-redis" />
+        <module name="common-mybatis" />
+        <module name="config-server" />
         <module name="cecs-auth" />
         <module name="common-web" />
         <module name="order-service" />
-        <module name="admin-boot" />
-        <module name="common-redis" />
         <module name="common-core" />
       </profile>
     </annotationProcessing>
@@ -52,12 +56,17 @@
       <module name="cecs-admin" options="-parameters" />
       <module name="cecs-auth" options="-parameters" />
       <module name="cecs-common" options="-parameters" />
+      <module name="cecs-event" options="-parameters" />
       <module name="cecs-gateway" options="-parameters" />
+      <module name="cecs-panel" options="-parameters" />
+      <module name="cecs-watchkeeper" options="-parameters" />
       <module name="common-core" options="-parameters" />
       <module name="common-mybatis" options="-parameters" />
       <module name="common-redis" options="-parameters" />
       <module name="common-web" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="event-api" options="-parameters" />
+      <module name="event-boot" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="gateway (1)" options="-parameters" />
       <module name="nacos-consumer" options="-parameters" />

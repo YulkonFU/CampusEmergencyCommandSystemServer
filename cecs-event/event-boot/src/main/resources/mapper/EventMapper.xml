@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.edu.cupk.event.mapper.EventMapper">
+    <select id="listEventPages" resultType="cn.edu.cupk.event.pojo.entity.Event">
+        SELECT
+            e.event_id,
+            e.plan_id,
+            e.reporter,
+            e.type,
+            e.start_time,
+            e.end_time,
+            e.description,
+            e.location,
+            e.commander,
+            e.level,
+            e.status
+        FROM
+            event e
+        <where>
+            e.deleted = 0
+        <if test='queryParams.keywords!=null and queryParams.keywords.trim() neq ""'>
+            AND (e.event_id LIKE CONCAT('%',#{queryParams.keywords},'%')
+            OR e.type LIKE CONCAT('%',#{queryParams.keywords},'%')
+            OR e.description LIKE CONCAT('%',#{queryParams.keywords},'%')
+            OR e.location LIKE CONCAT('%',#{queryParams.keywords},'%')
+            OR e.commander LIKE CONCAT('%',#{queryParams.keywords},'%')
+            OR e.level LIKE CONCAT('%',#{queryParams.keywords},'%')
+            OR e.status LIKE CONCAT('%',#{queryParams.keywords},'%'))
+        </if>
+        </where>
+    </select>
+
+    <select id="getEventTimes" resultType="java.util.Map">
+        SELECT
+            `event`.type,
+            COUNT(*) AS count
+        FROM
+            `event`
+        GROUP BY
+            `event`.type
+    </select>
+</mapper>

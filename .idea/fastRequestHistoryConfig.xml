@@ -4,123 +4,518 @@
     <option name="historyList">
       <list>
         <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.admin.controller.UserController" />
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
           <option name="code" value="200" />
-          <option name="enableEnv" value="cecs-admin" />
+          <option name="enableEnv" value="cecs-event" />
           <option name="enableProject" value="cecs" />
-          <option name="method" value="getAuthInfoByUsername" />
+          <option name="method" value="getEventTimes" />
           <option name="methodType" value="GET" />
           <option name="paramGroup">
             <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.admin.controller.UserController" />
-              <option name="method" value="getAuthInfoByUsername" />
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="getEventTimes" />
               <option name="methodDescription" value="New Request" />
               <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/users//username/{username}" />
-              <option name="pathParamsKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_9fzlt&quot;}]" />
-              <option name="url" value="/users/username/admin" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[]" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8002/users/username/admin?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;OK&quot;,&quot;data&quot;:{&quot;id&quot;:1,&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;$2a$10$ROeQtUIT0W.H4hcXi8Rua.fTrxzhwhhVL7aGwqdryvZdK8.UY3Gce&quot;,&quot;roles&quot;:[&quot;ADMIN&quot;],&quot;authorities&quot;:[&quot;duty_staff:add&quot;,&quot;duty_staff:delete&quot;,&quot;duty_staff:modify&quot;,&quot;duty_staff:query&quot;,&quot;rescue_staff:add&quot;,&quot;rescue_staff:delete&quot;,&quot;rescue_staff:modify&quot;,&quot;rescue_staff:query&quot;,&quot;master_staff:add&quot;,&quot;master_staff:delete&quot;,&quot;master_staff:modify&quot;,&quot;master_staff:query&quot;,&quot;event:query&quot;]}}" />
-          <option name="url" value="/users/username/admin" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.admin.controller.UserController" />
-          <option name="code" value="404" />
-          <option name="enableEnv" value="cecs-admin" />
-          <option name="enableProject" value="cecs" />
-          <option name="method" value="getAuthInfoByUsername" />
-          <option name="methodType" value="GET" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.admin.controller.UserController" />
-              <option name="method" value="getAuthInfoByUsername" />
-              <option name="methodDescription" value="New Request" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/users//username/{username}" />
-              <option name="pathParamsKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_9fzlt&quot;}]" />
-              <option name="url" value="/users//username/admin" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[]" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8002/users//username/admin?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-01T13:48:10.954+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/users//username/admin&quot;}" />
-          <option name="url" value="/users//username/admin" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.admin.controller.UserController" />
-          <option name="code" value="404" />
-          <option name="enableEnv" value="cecs-admin" />
-          <option name="enableProject" value="cecs" />
-          <option name="method" value="getAuthInfoByUsername" />
-          <option name="methodType" value="GET" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.admin.controller.UserController" />
-              <option name="method" value="getAuthInfoByUsername" />
-              <option name="methodDescription" value="New Request" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/users//username/{username}" />
-              <option name="pathParamsKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_9fzlt&quot;}]" />
-              <option name="url" value="/users//username/admin" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[]" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8002/users//username/admin?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-01T13:48:09.067+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/users//username/admin&quot;}" />
-          <option name="url" value="/users//username/admin" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.admin.controller.UserController" />
-          <option name="code" value="404" />
-          <option name="enableEnv" value="cecs-admin" />
-          <option name="enableProject" value="cecs" />
-          <option name="method" value="getAuthInfoByUsername" />
-          <option name="methodType" value="GET" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.admin.controller.UserController" />
-              <option name="method" value="getAuthInfoByUsername" />
-              <option name="methodDescription" value="New Request" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/users//username/{username}" />
-              <option name="pathParamsKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;username&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;username_9fzlt&quot;}]" />
-              <option name="url" value="/users//username/admin" />
-              <option name="urlEncodedKeyValueListJson" value="[]" />
-              <option name="urlParamsKeyValueListJson" value="[]" />
-            </ParamGroupCollection>
-          </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8002/users//username/admin?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-01T13:47:53.904+00:00&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;path&quot;:&quot;/users//username/admin&quot;}" />
-          <option name="url" value="/users//username/admin" />
-        </ResponseHistory>
-        <ResponseHistory>
-          <option name="className" value="cn.edu.cupk.cecs.nacosconsumer.controller.ConsumerController" />
-          <option name="enableEnv" value="local" />
-          <option name="enableProject" value="newsCMS" />
-          <option name="method" value="getProviderMessage" />
-          <option name="methodType" value="GET" />
-          <option name="paramGroup">
-            <ParamGroupCollection>
-              <option name="className" value="cn.edu.cupk.cecs.nacosconsumer.controller.ConsumerController" />
-              <option name="method" value="getProviderMessage" />
-              <option name="methodDescription" value="New Request" />
-              <option name="multipartKeyValueListJson" value="[]" />
-              <option name="originUrl" value="/consumer/msg" />
+              <option name="originUrl" value="/events/times" />
               <option name="pathParamsKeyValueListJson" value="[]" />
-              <option name="url" value="/consumer/msg" />
+              <option name="url" value="/events/times" />
               <option name="urlEncodedKeyValueListJson" value="[]" />
               <option name="urlParamsKeyValueListJson" value="[]" />
             </ParamGroupCollection>
           </option>
-          <option name="requestInfo" value="Request Url: http://localhost:8989/consumer/msg?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;    token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJkMWRiYzc4OWJjYjQ0NWY0OTA4NGU3MjQyNTI5MGNlMyIsInN1YiI6IjEiLCJpc3MiOiJja3hnIiwiaWF0IjoxNjU1NTk4ODAzLCJleHAiOjE2NTU2MDI0MDN9.ekoi8VXoZ5KrWnFH96jj5pwzcti8Ams4elxCEp9xOLo&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
-          <option name="response" value="ConnectException: Connection refused: connect" />
-          <option name="url" value="/consumer/msg" />
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/times?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;查询成功&quot;,&quot;data&quot;:[{&quot;eventType&quot;:&quot;火灾&quot;,&quot;times&quot;:1},{&quot;eventType&quot;:&quot;爆炸&quot;,&quot;times&quot;:4}]}" />
+          <option name="url" value="/events/times" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="getEventTimes" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="getEventTimes" />
+              <option name="methodDescription" value="New Request" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/times" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/times" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/times?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;OK&quot;,&quot;data&quot;:{&quot;code&quot;:200,&quot;msg&quot;:&quot;查询成功&quot;,&quot;data&quot;:[{&quot;eventType&quot;:&quot;火灾&quot;,&quot;times&quot;:1},{&quot;eventType&quot;:&quot;爆炸&quot;,&quot;times&quot;:4}]}}" />
+          <option name="url" value="/events/times" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="getEventTimes" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="getEventTimes" />
+              <option name="methodDescription" value="New Request" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/times" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/times" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/times?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;OK&quot;,&quot;data&quot;:{&quot;code&quot;:200,&quot;msg&quot;:&quot;查询成功&quot;,&quot;data&quot;:[{&quot;eventType&quot;:&quot;火灾&quot;,&quot;times&quot;:1},{&quot;eventType&quot;:&quot;爆炸&quot;,&quot;times&quot;:4}]}}" />
+          <option name="url" value="/events/times" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PUT" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PUT" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=4&#10;&amp;reason=reason_f7t19" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;终止成功&quot;,&quot;data&quot;:true}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PUT" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PUT" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=4&#10;&amp;reason=reason_f7t19" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;终止成功&quot;,&quot;data&quot;:true}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PUT" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PUT" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=4&#10;&amp;reason=reason_f7t19" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;终止成功&quot;,&quot;data&quot;:true}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PUT" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PUT" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=4&#10;&amp;reason=reason_f7t19" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:200,&quot;msg&quot;:&quot;终止成功&quot;,&quot;data&quot;:true}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PUT" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PUT" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=4&#10;&amp;reason=reason_f7t19" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:400,&quot;msg&quot;:&quot;参数错误&quot;,&quot;data&quot;:null}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PUT" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PUT" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=4&#10;&amp;reason=reason_f7t19" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:400,&quot;msg&quot;:&quot;参数错误&quot;,&quot;data&quot;:null}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PUT" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PUT" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=4&#10;&amp;reason=reason_f7t19" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:400,&quot;msg&quot;:&quot;参数错误&quot;,&quot;data&quot;:null}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PUT" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PUT" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=4&#10;&amp;reason=reason_f7t19" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:400,&quot;msg&quot;:&quot;参数错误&quot;,&quot;data&quot;:null}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PUT" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PUT" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=4&#10;&amp;reason=reason_f7t19" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:400,&quot;msg&quot;:&quot;参数错误&quot;,&quot;data&quot;:null}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PUT" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PUT" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=4&#10;&amp;reason=reason_f7t19" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:400,&quot;msg&quot;:&quot;参数错误&quot;,&quot;data&quot;:null}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PUT" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PUT" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=4&#10;&amp;reason=reason_f7t19" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:400,&quot;msg&quot;:&quot;参数错误&quot;,&quot;data&quot;:null}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PUT" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PUT" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=4&#10;&amp;reason=reason_f7t19" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:400,&quot;msg&quot;:&quot;参数错误&quot;,&quot;data&quot;:null}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PUT" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PUT" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=4&#10;&amp;reason=reason_f7t19" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:400,&quot;msg&quot;:&quot;参数错误&quot;,&quot;data&quot;:null}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PUT" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PUT" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_f7t19&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=1&#10;&amp;reason=reason_f7t19" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;code&quot;:400,&quot;msg&quot;:&quot;参数错误&quot;,&quot;data&quot;:null}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="405" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PATCH" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PATCH" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_gtrqk&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=1&#10;&amp;reason=reason_gtrqk" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-02T14:30:18.643+00:00&quot;,&quot;status&quot;:405,&quot;error&quot;:&quot;Method Not Allowed&quot;,&quot;path&quot;:&quot;/events/terminate&quot;}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="400" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PATCH" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PATCH" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_gtrqk&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=1&#10;&amp;reason=reason_gtrqk" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-02T14:29:31.055+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;path&quot;:&quot;/events/terminate&quot;}" />
+          <option name="url" value="/events/terminate" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+          <option name="code" value="400" />
+          <option name="enableEnv" value="cecs-event" />
+          <option name="enableProject" value="cecs" />
+          <option name="method" value="terminateEvent" />
+          <option name="methodType" value="PATCH" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="cn.edu.cupk.event.controller.EventController" />
+              <option name="method" value="terminateEvent" />
+              <option name="methodDescription" value="New Request" />
+              <option name="methodType" value="PATCH" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/events/terminate" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="url" value="/events/terminate" />
+              <option name="urlEncodedKeyValueListJson" value="[{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;status&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;reason&quot;,&quot;type&quot;:&quot;String&quot;,&quot;value&quot;:&quot;reason_gtrqk&quot;}]" />
+              <option name="urlEncodedKeyValueListText" value="id=1&#10;&amp;status=1&#10;&amp;reason=reason_gtrqk" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:8001/events/terminate?=&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36 Hutool&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Accept-Language: zh-CN,zh;q=0.8&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;timestamp&quot;:&quot;2022-07-02T14:28:34.428+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;path&quot;:&quot;/events/terminate&quot;}" />
+          <option name="url" value="/events/terminate" />
         </ResponseHistory>
       </list>
     </option>

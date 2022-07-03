@@ -3,13 +3,11 @@ package cn.edu.cupk.common.base;
 import lombok.Data;
 
 /**
- * @author 赵希奥
- * @date 2022/6/29 5:13
- * @github https://github.com/CKXGZXA
- * @gitee https://gitee.com/ckxgzxa
- * @description:
+ * @author huawei
+ * @desc 基础分页请求对象
+ * @email huawei_code@163.com
+ * @date 2021/2/28
  */
-
 @Data
 public class BasePageQuery {
 

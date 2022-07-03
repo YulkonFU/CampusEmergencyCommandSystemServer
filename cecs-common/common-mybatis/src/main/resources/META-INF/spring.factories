@@ -1,3 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  cn.edu.cupk.common.mybatis.config.MybatisPlusConfig
+  cn.edu.cupk.common.mybatis.config.MybatisPlusConfig,\
+  cn.edu.cupk.common.mybatis.handler.MyMetaObjectHandler
 

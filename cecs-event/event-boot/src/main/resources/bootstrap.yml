@@ -1,9 +1,9 @@
 server:
-  port: 8004
+  port: 8001
 
 spring:
   application:
-    name: cecs-watchkeeper
+    name: cecs-event
   cloud:
     nacos:
       discovery:
