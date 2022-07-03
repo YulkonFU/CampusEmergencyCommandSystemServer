@@ -1,0 +1,17 @@
+server:
+  port: 8007
+
+spring:
+  application:
+    name: cecs-plan
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nat.ckxgzxa.top:33300
+        username: rst
+        password: rst
+      config:
+        server-addr: nat.ckxgzxa.top:33300
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        prefix: ${spring.application.name}
