@@ -16,11 +16,11 @@ public class EventTimesVO {
     /**
      * 事件类型
      */
-    private String eventType;
+    private String name;
 
     /**
      * 事件发生次数
      */
-    private Long times;
+    private Long value;
 
 }

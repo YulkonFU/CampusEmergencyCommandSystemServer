@@ -17,6 +17,7 @@
         <module>cecs-panel</module>
         <module>cecs-event</module>
         <module>cecs-watchkeeper</module>
+        <module>cecs-supply</module>
     </modules>
 
     <parent>

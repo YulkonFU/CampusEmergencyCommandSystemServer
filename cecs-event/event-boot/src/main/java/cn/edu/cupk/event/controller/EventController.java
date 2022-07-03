@@ -6,7 +6,6 @@ import cn.edu.cupk.event.pojo.entity.Event;
 import cn.edu.cupk.event.pojo.entity.enums.EventStatusEnum;
 import cn.edu.cupk.event.pojo.query.EventPageQuery;
 import cn.edu.cupk.event.service.EventService;
-import cn.hutool.core.date.DateTime;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -83,6 +82,7 @@ public class EventController {
     @GetMapping("/periods")
     @ResponseBody
     public Result getEventPeriods() {
+        // todo 将每段时间空的需要填0返回
         return eventService.getEventPeriod();
     }
 

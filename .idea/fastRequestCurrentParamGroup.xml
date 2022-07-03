@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="fastRequestCurrentParamGroup">
-    <option name="className" value="cn.edu.cupk.event.controller.EventController" />
-    <option name="method" value="getEventTimes" />
-    <option name="module" value="event-boot" />
-    <option name="originUrl" value="/events/times" />
-    <option name="url" value="/events/times" />
+    <option name="bodyParamMap">
+      <map>
+        <entry key="supply">
+          <value>
+            <Object />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="className" value="cn.edu.cupk.supply.controller.SupplyController" />
+    <option name="method" value="update" />
+    <option name="methodType" value="PUT" />
+    <option name="module" value="supply-boot" />
+    <option name="originUrl" value="/supply/" />
+    <option name="url" value="/supply/" />
   </component>
 </project>

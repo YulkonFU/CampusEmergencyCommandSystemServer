@@ -57,8 +57,8 @@ public class EventServiceImpl extends ServiceImpl<EventMapper, Event> implements
         List<Map<String, Object>> eventTimes = eventMapper.getEventTimes();
         for (Map<String, Object> eventTime : eventTimes) {
             EventTimesVO eventTimesVO = new EventTimesVO();
-            eventTimesVO.setEventType(EventTypeEnum.getDescByValue((Integer) eventTime.get("type")));
-            eventTimesVO.setTimes((Long) eventTime.get("count"));
+            eventTimesVO.setName(EventTypeEnum.getDescByValue((Integer) eventTime.get("type")));
+            eventTimesVO.setValue((Long) eventTime.get("count"));
             eventTimesVOS.add(eventTimesVO);
         }
         return Result.success("查询成功", eventTimesVOS);
